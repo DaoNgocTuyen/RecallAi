@@ -1,0 +1,85 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/07096ca4-4160-4e22-bbb1-80170dbdf8e3";
+const imgIconCap = `${assetPathPrefix}/03812.svg`;
+const imgEllipse = `${assetPathPrefix}/dbc4e.svg`;
+const imgIconCheck = `${assetPathPrefix}/a04ba.svg`;
+const imgIconSpark = `${assetPathPrefix}/f734f.svg`;
+const imgRecallAiCompagnon = `${assetPathPrefix}/08ad7.svg`;
+const imgEllipse1 = `${assetPathPrefix}/3aa0e.svg`;
+const imgIconTeacher = `${assetPathPrefix}/96292.svg`;
+
+function RecallAiRole({ className }: { className?: string }) {
+  return (
+    <div className={className || "bg-[var(--recall-mint,#ddf8f0)] border-[1.5px] border-[var(--recall-emerald,#00b889)] border-solid h-[176px] relative rounded-[var(--radius-24,24px)] w-[342px]"} data-node-id="10:1635" data-name="RecallAI / Rôle">
+      <div className="absolute left-[18.5px] size-[32px] top-[18.5px]" data-node-id="10:1636" data-name="Icon / cap">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCap} />
+      </div>
+      <div className="absolute left-[292.5px] size-[24px] top-[18.5px]" data-node-id="10:1638" data-name="Ellipse">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+      </div>
+      <div className="absolute left-[296.5px] size-[16px] top-[22.5px]" data-node-id="10:1639" data-name="Icon / check">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[25px] left-[18.5px] not-italic text-[18px] text-[color:var(--recall-ink,#17332d)] top-[66.5px] w-[290px]" data-node-id="10:1641">
+        Học sinh / Sinh viên
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[20px] left-[18.5px] not-italic text-[14px] text-[color:var(--recall-secondary-readable,#536e64)] top-[98.5px] w-[290px]" data-node-id="10:1642">
+        Tự học với AI, luyện tập bằng flashcard và theo dõi tiến độ ghi nhớ.
+      </p>
+    </div>
+  );
+}
+
+export default function Component04RoleSelection() {
+  return (
+    <div className="bg-[var(--recall-background,#f7fffc)] overflow-clip relative rounded-[var(--radius-28,28px)] shadow-[0px_8px_24px_0px_rgba(36,95,76,0.07)] size-full" data-node-id="10:1689" data-name="04 · Role Selection">
+      <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[20px] left-[24px] not-italic text-[14px] text-[color:var(--recall-ink,#17332d)] top-[15px] w-[80px]" data-node-id="10:1690">
+        9:41
+      </p>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[4px] left-[298px] rounded-[1px] top-[25px] w-[3px]" data-node-id="10:1691" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[6px] left-[302px] rounded-[1px] top-[23px] w-[3px]" data-node-id="10:1692" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[8px] left-[306px] rounded-[1px] top-[21px] w-[3px]" data-node-id="10:1693" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[10px] left-[310px] rounded-[1px] top-[19px] w-[3px]" data-node-id="10:1694" data-name="Signal" />
+      <div className="absolute left-[320px] size-[15px] top-[16px]" data-node-id="10:1695" data-name="Icon / spark">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSpark} />
+      </div>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[10px] left-[344px] rounded-[3px] top-[21px] w-[22px]" data-node-id="10:1697" data-name="Batterie">
+        <div className="absolute bg-[var(--recall-surface,white)] h-[6px] left-[2px] rounded-[1px] top-[2px] w-[16px]" data-node-id="10:1698" data-name="Charge" />
+      </div>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[4px] left-[130px] rounded-[2px] top-[824px] w-[130px]" data-node-id="10:1699" data-name="Indicateur" />
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[25px] left-[24px] not-italic text-[18px] text-[color:var(--recall-action,#006b54)] top-[74px] w-[240px]" data-node-id="10:1820">
+        RecallAI
+      </p>
+      <div className="absolute left-[274px] size-[96px] top-[58px]" data-node-id="10:1821" data-name="RecallAI / Compagnon">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRecallAiCompagnon} />
+      </div>
+      <div className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[0] left-[24px] not-italic text-[30px] text-[color:var(--recall-ink,#17332d)] top-[148px] w-[342px]" data-node-id="10:1834">
+        <p className="leading-[42px] mb-0">Bạn là ai</p>
+        <p className="leading-[42px]">trong RecallAI?</p>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[20px] left-[24px] not-italic text-[14px] text-[color:var(--recall-secondary-readable,#536e64)] top-[246px] w-[326px]" data-node-id="10:1835">
+        Chọn vai trò để chúng mình cá nhân hóa trải nghiệm cho bạn.
+      </p>
+      <RecallAiRole className="absolute bg-[var(--recall-mint,#ddf8f0)] border-[1.5px] border-[var(--recall-emerald,#00b889)] border-solid h-[176px] left-[24px] rounded-[var(--radius-24,24px)] top-[332px] w-[342px]" />
+      <a className="absolute bg-[var(--recall-surface,white)] block border-[1.5px] border-[var(--recall-border,#d5eae2)] border-solid cursor-pointer h-[176px] left-[24px] rounded-[var(--radius-24,24px)] top-[524px] w-[342px]" data-node-id="10:1846" data-name="Role / Teacher">
+        <div className="absolute left-[292.5px] size-[24px] top-[18.5px]" data-node-id="I10:1846;10:1638" data-name="Ellipse">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse1} />
+        </div>
+        <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[25px] left-[18.5px] not-italic text-[18px] text-[color:var(--recall-ink,#17332d)] text-left top-[66.5px] w-[290px]" data-node-id="I10:1846;10:1641">
+          Giáo viên
+        </p>
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[20px] left-[18.5px] not-italic text-[14px] text-[color:var(--recall-secondary-readable,#536e64)] text-left top-[98.5px] w-[290px]" data-node-id="I10:1846;10:1642">
+          Quản lý lớp học, tạo câu hỏi, giao bài kiểm tra và theo dõi kết quả.
+        </p>
+        <div className="absolute left-[18.5px] size-[32px] top-[18.5px]" data-node-id="I10:1846;10:1643" data-name="Icon / teacher">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconTeacher} />
+        </div>
+      </a>
+      <a className="absolute bg-gradient-to-b content-stretch cursor-pointer drop-shadow-[0px_8px_12px_rgba(36,95,76,0.1)] flex from-[#00d6a0] h-[56px] items-center justify-center left-[24px] px-[24px] rounded-[var(--radius-999,999px)] to-[#81e8cd] top-[740px] w-[342px]" data-node-id="10:1856" data-name="CTA / Tiếp tục   →">
+        <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-ink,#17332d)] text-center whitespace-pre" data-node-id="I10:1856;10:1588">{`Tiếp tục   →`}</p>
+      </a>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[14px] left-[195px] not-italic text-[10px] text-[color:var(--recall-secondary-readable,#536e64)] text-center top-[805px] w-[342px]" data-node-id="10:1858">
+        Bạn có thể thay đổi vai trò trong Cài đặt.
+      </p>
+    </div>
+  );
+}

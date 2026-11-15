@@ -1,0 +1,19 @@
+{
+    "name":  "RecallAI — Học chủ động, nhớ lâu hơn",
+    "short_name":  "RecallAI",
+    "start_url":  ".",
+    "display":  "standalone",
+    "background_color":  "#F7FFFC",
+    "theme_color":  "#087F69",
+    "description":  "Giao diện RecallAI chuyển từ Figma sang Flutter/Dart, dùng dữ liệu mẫu.",
+    "orientation":  "portrait-primary",
+    "prefer_related_applications":  false,
+    "icons":  [
+                  {
+                      "src":  "icons/recallai.png",
+                      "sizes":  "1024x1024",
+                      "type":  "image/png",
+                      "purpose":  "any"
+                  }
+              ]
+}

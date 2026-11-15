@@ -1,0 +1,10 @@
+﻿**/bin/
+**/obj/
+**/.vs/
+**/node_modules/
+**/.npm-cache/
+**/dist/
+**/test-results/
+**/playwright-report/
+*.tsbuildinfo
+*.local

@@ -1,0 +1,103 @@
+{
+  "runId": "recallai-library-v2",
+  "fileKey": "jtdPE6oTE3hNoAOn3FTbOS",
+  "sessionId": "03fa1c26-e88e-47ed-bb7d-3b8e8315472f",
+  "pageId": "32:449",
+  "documentationId": "37:594",
+  "mastersId": "33:449",
+  "archivePageId": "42:1649",
+  "scope": "12-section component library; application screens preserved",
+  "sections": [
+    {
+      "id": "37:616",
+      "name": "01 · Thương hiệu & nền tảng",
+      "height": 1010
+    },
+    {
+      "id": "37:774",
+      "name": "02 · Nút bấm",
+      "height": 1336
+    },
+    {
+      "id": "37:934",
+      "name": "03 · Biểu mẫu",
+      "height": 2138
+    },
+    {
+      "id": "37:1270",
+      "name": "04 · Linh vật RecallAI",
+      "height": 350
+    },
+    {
+      "id": "37:1323",
+      "name": "05 · Xác thực & lựa chọn vai trò",
+      "height": 1110
+    },
+    {
+      "id": "37:1453",
+      "name": "06 · Thẻ học tập",
+      "height": 996
+    },
+    {
+      "id": "37:1552",
+      "name": "07 · Tổng quan học sinh",
+      "height": 1014
+    },
+    {
+      "id": "37:1641",
+      "name": "08 · Luyện tập & câu hỏi",
+      "height": 1432
+    },
+    {
+      "id": "37:1799",
+      "name": "09 · Flashcard & lịch ôn tập",
+      "height": 712
+    },
+    {
+      "id": "37:1857",
+      "name": "10 · Lớp học & giảng dạy",
+      "height": 996
+    },
+    {
+      "id": "37:1956",
+      "name": "11 · Điều hướng",
+      "height": 750
+    },
+    {
+      "id": "37:2137",
+      "name": "12 · Phản hồi & trạng thái hệ thống",
+      "height": 940
+    }
+  ],
+  "counts": {
+    "componentDefinitions": 237,
+    "variantSets": 23,
+    "documentationInstances": 227
+  },
+  "verification": {
+    "interOnly": true,
+    "textOverflow": 0,
+    "buttonHeights": [
+      36,
+      44,
+      52
+    ],
+    "semanticVariableCount": 26,
+    "allScopesExplicit": true,
+    "all12SectionsVisuallyReviewed": true
+  },
+  "pending": [],
+  "status": "complete",
+  "mascot": {
+    "nodeId": "42:1651",
+    "sizes": [
+      48,
+      96,
+      180
+    ],
+    "asset": "recallai-robot-3d-final.png",
+    "background": "mint brand tile",
+    "provider": "Figma AI",
+    "creditsUsed": true
+  }
+}

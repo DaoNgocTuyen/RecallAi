@@ -1,0 +1,271 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/7c39e1cd-ed32-4683-b800-229b5bbbb030";
+const imgIconHome = `${assetPathPrefix}/4410f.svg`;
+const imgIconFile = `${assetPathPrefix}/c2eaf.svg`;
+const imgIconSpark = `${assetPathPrefix}/067ef.svg`;
+const imgIconClock = `${assetPathPrefix}/0a158.svg`;
+const imgIconUser = `${assetPathPrefix}/212f7.svg`;
+const imgIconSpark1 = `${assetPathPrefix}/f734f.svg`;
+const imgEllipse = `${assetPathPrefix}/ce899.svg`;
+const imgNotifications = `${assetPathPrefix}/bc710.svg`;
+const imgRecallAiCompagnon = `${assetPathPrefix}/56103.svg`;
+const imgIconClock1 = `${assetPathPrefix}/5ec5e.svg`;
+const imgIconUpload = `${assetPathPrefix}/70a48.svg`;
+const imgIconSpark2 = `${assetPathPrefix}/4fc24.svg`;
+const imgIconCards = `${assetPathPrefix}/6fe56.svg`;
+const imgIconTeacher = `${assetPathPrefix}/5ad61.svg`;
+const imgBiuTngChart = `${assetPathPrefix}/0ec43.svg`;
+const imgBiuTngCalendar = `${assetPathPrefix}/86f75.svg`;
+const imgIconBook = `${assetPathPrefix}/6fbbb.svg`;
+
+type RecallAiBottomNavigationProps = {
+  className?: string;
+  selected?: "Trang chủ";
+};
+
+function RecallAiBottomNavigation({ className, selected = "Trang chủ" }: RecallAiBottomNavigationProps) {
+  return (
+    <div className={className || "bg-[var(--recall-surface,white)] border border-[var(--recall-border,#d5eae2)] border-solid drop-shadow-[0px_8px_12px_rgba(36,95,76,0.12)] h-[66px] relative rounded-[var(--radius-24,24px)] w-[358px]"} data-node-id="11:468">
+      <div className="absolute bg-[var(--recall-mint,#ddf8f0)] h-[60px] left-[8px] rounded-[var(--radius-16,16px)] top-[2px] w-[64px]" data-node-id="10:1960" data-name="Nav / 0">
+        <div className="absolute left-[22px] size-[20px] top-[7px]" data-node-id="I10:1960;10:1624" data-name="Icon / home">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconHome} />
+        </div>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[13px] left-[32px] not-italic text-[9px] text-[color:var(--recall-action,#006b54)] text-center top-[34px] w-[64px]" data-node-id="I10:1960;10:1626">
+          Trang chủ
+        </p>
+      </div>
+      <button className="absolute bg-[var(--recall-surface,white)] block cursor-pointer h-[60px] left-[76px] rounded-[var(--radius-16,16px)] top-[2px] w-[64px]" data-node-id="10:1972" data-name="Nav / 1">
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[13px] left-[32px] not-italic text-[9px] text-[color:var(--recall-secondary-readable,#536e64)] text-center top-[34px] w-[64px]" data-node-id="I10:1972;10:1626">
+          Tài liệu
+        </p>
+        <div className="absolute left-[22px] size-[20px] top-[7px]" data-node-id="I10:1972;10:1627" data-name="Icon / file">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconFile} />
+        </div>
+      </button>
+      <button className="absolute bg-[var(--recall-surface,white)] block cursor-pointer h-[60px] left-[144px] rounded-[var(--radius-16,16px)] top-[2px] w-[64px]" data-node-id="10:1984" data-name="Nav / 2">
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[13px] left-[32px] not-italic text-[9px] text-[color:var(--recall-secondary-readable,#536e64)] text-center top-[34px] w-[64px]" data-node-id="I10:1984;10:1626">
+          Luyện tập
+        </p>
+        <div className="absolute left-[22px] size-[20px] top-[7px]" data-node-id="I10:1984;10:1629" data-name="Icon / spark">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSpark} />
+        </div>
+      </button>
+      <button className="absolute bg-[var(--recall-surface,white)] block cursor-pointer h-[60px] left-[212px] rounded-[var(--radius-16,16px)] top-[2px] w-[64px]" data-node-id="10:1996" data-name="Nav / 3">
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[13px] left-[32px] not-italic text-[9px] text-[color:var(--recall-secondary-readable,#536e64)] text-center top-[34px] w-[64px]" data-node-id="I10:1996;10:1626">
+          Ôn tập
+        </p>
+        <div className="absolute left-[22px] size-[20px] top-[7px]" data-node-id="I10:1996;10:1631" data-name="Icon / clock">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconClock} />
+        </div>
+      </button>
+      <button className="absolute bg-[var(--recall-surface,white)] block cursor-pointer h-[60px] left-[280px] rounded-[var(--radius-16,16px)] top-[2px] w-[64px]" data-node-id="10:2008" data-name="Nav / 4">
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[13px] left-[32px] not-italic text-[9px] text-[color:var(--recall-secondary-readable,#536e64)] text-center top-[34px] w-[64px]" data-node-id="I10:2008;10:1626">
+          Cá nhân
+        </p>
+        <div className="absolute left-[22px] size-[20px] top-[7px]" data-node-id="I10:2008;10:1633" data-name="Icon / user">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconUser} />
+        </div>
+      </button>
+    </div>
+  );
+}
+
+function RecallAiStatistique({ className }: { className?: string }) {
+  return (
+    <div className={className || "[word-break:break-word] bg-[var(--recall-surface,white)] border border-[var(--recall-border,#d5eae2)] border-solid h-[96px] not-italic relative rounded-[var(--radius-24,24px)] w-[108px]"} data-node-id="10:1610" data-name="RecallAI / Statistique">
+      <p className="absolute font-['Inter:Bold'] font-bold leading-[34px] left-[13px] text-[24px] text-[color:var(--recall-ink,#17332d)] top-[11px] w-[80px]" data-node-id="10:1611">
+        12
+      </p>
+      <p className="absolute font-['Inter:Medium'] font-medium leading-[15px] left-[13px] text-[11px] text-[color:var(--recall-secondary-readable,#536e64)] top-[54px] w-[90px]" data-node-id="10:1612">
+        Bộ flashcard
+      </p>
+    </div>
+  );
+}
+
+export default function Component05StudentDashboard() {
+  return (
+    <div className="bg-[var(--recall-background,#f7fffc)] overflow-clip relative rounded-[var(--radius-28,28px)] shadow-[0px_8px_24px_0px_rgba(36,95,76,0.07)] size-full" data-node-id="10:1701" data-name="05 · Student Dashboard">
+      <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[20px] left-[24px] not-italic text-[14px] text-[color:var(--recall-ink,#17332d)] top-[15px] w-[80px]" data-node-id="10:1702">
+        9:41
+      </p>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[4px] left-[298px] rounded-[1px] top-[25px] w-[3px]" data-node-id="10:1703" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[6px] left-[302px] rounded-[1px] top-[23px] w-[3px]" data-node-id="10:1704" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[8px] left-[306px] rounded-[1px] top-[21px] w-[3px]" data-node-id="10:1705" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[10px] left-[310px] rounded-[1px] top-[19px] w-[3px]" data-node-id="10:1706" data-name="Signal" />
+      <div className="absolute left-[320px] size-[15px] top-[16px]" data-node-id="10:1707" data-name="Icon / spark">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSpark1} />
+      </div>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[10px] left-[344px] rounded-[3px] top-[21px] w-[22px]" data-node-id="10:1709" data-name="Batterie">
+        <div className="absolute bg-[var(--recall-surface,white)] h-[6px] left-[2px] rounded-[1px] top-[2px] w-[16px]" data-node-id="10:1710" data-name="Charge" />
+      </div>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[4px] left-[130px] rounded-[2px] top-[824px] w-[130px]" data-node-id="10:1711" data-name="Indicateur" />
+      <div className="absolute bg-[var(--recall-background,#f7fffc)] h-[696px] left-0 overflow-x-clip overflow-y-auto top-[56px] w-[390px]" data-node-id="10:1859" data-name="Viewport / vertical scroll">
+        <div className="absolute bg-[var(--recall-background,#f7fffc)] content-stretch flex flex-col gap-[var(--space-24,24px)] items-start left-[24px] top-[8px] w-[342px]" data-node-id="10:1860" data-name="Feed / Auto Layout">
+          <div className="bg-[var(--recall-background,#f7fffc)] h-[76px] relative shrink-0 w-[342px]" data-node-id="10:1861" data-name="Greeting">
+            <div className="absolute left-0 size-[40px] top-[8px]" data-node-id="10:1862" data-name="Ellipse">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+            </div>
+            <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[17px] left-[20px] not-italic text-[12px] text-[color:var(--recall-action,#006b54)] text-center top-[18px] w-[40px]" data-node-id="10:1863">
+              MA
+            </p>
+            <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[25px] left-[52px] not-italic text-[18px] text-[color:var(--recall-ink,#17332d)] top-[4px] w-[240px]" data-node-id="10:1864">
+              Chào buổi sáng! 👋
+            </p>
+            <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[17px] left-[52px] not-italic text-[12px] text-[color:var(--recall-secondary-readable,#536e64)] top-[35px] w-[250px]" data-node-id="10:1865">
+              Hôm nay bạn muốn học gì?
+            </p>
+            <div className="absolute left-[302px] size-[40px] top-[7px]" data-node-id="10:1866" data-name="Notifications">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgNotifications} />
+            </div>
+          </div>
+          <div className="bg-gradient-to-b from-[#ddf8f0] h-[196px] relative rounded-[var(--radius-24,24px)] shrink-0 to-[#d9f8fa] w-[342px]" data-node-id="10:1870" data-name="Hero / Start learning">
+            <div className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[0] left-[20px] not-italic text-[22px] text-[color:var(--recall-ink,#17332d)] top-[20px] w-[210px]" data-node-id="10:1871">
+              <p className="leading-[31px] mb-0">Sẵn sàng học</p>
+              <p className="leading-[31px]">thông minh hơn?</p>
+            </div>
+            <div className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[20px] not-italic text-[12px] text-[color:var(--recall-secondary-readable,#536e64)] top-[91px] w-[210px]" data-node-id="10:1872">
+              <p className="leading-[17px] mb-0">Tải tài liệu lên để bắt đầu</p>
+              <p className="leading-[17px]">luyện tập cùng AI.</p>
+            </div>
+            <div className="absolute left-[211px] size-[134px] top-[26px]" data-node-id="10:1873" data-name="RecallAI / Compagnon">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRecallAiCompagnon} />
+            </div>
+            <a className="absolute bg-gradient-to-b content-stretch cursor-pointer drop-shadow-[0px_8px_12px_rgba(36,95,76,0.1)] flex from-[#00d6a0] h-[40px] items-center justify-center left-[20px] px-[24px] rounded-[var(--radius-999,999px)] to-[#81e8cd] top-[141px] w-[208px]" data-node-id="10:1886" data-name="CTA / +  Tạo bài học mới">
+              <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-ink,#17332d)] text-center whitespace-pre" data-node-id="I10:1886;10:1588">{`+  Tạo bài học mới`}</p>
+            </a>
+          </div>
+          <div className="bg-[var(--recall-background,#f7fffc)] h-[132px] relative shrink-0 w-[342px]" data-node-id="10:1888" data-name="Study overview">
+            <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[25px] left-0 not-italic text-[18px] text-[color:var(--recall-ink,#17332d)] top-0 w-[342px]" data-node-id="10:1889">
+              Tổng quan học tập
+            </p>
+            <RecallAiStatistique className="[word-break:break-word] absolute bg-[var(--recall-surface,white)] border border-[var(--recall-border,#d5eae2)] border-solid h-[96px] left-0 not-italic rounded-[var(--radius-24,24px)] top-[36px] w-[108px]" />
+            <div className="[word-break:break-word] absolute bg-[var(--recall-surface,white)] border border-[var(--recall-border,#d5eae2)] border-solid h-[96px] left-[117px] not-italic rounded-[var(--radius-24,24px)] top-[36px] w-[108px]" data-node-id="10:1893" data-name="RecallAI / Statistique">
+              <p className="absolute font-['Inter:Bold'] font-bold leading-[34px] left-[13px] text-[24px] text-[color:var(--recall-ink,#17332d)] top-[11px] w-[80px]" data-node-id="I10:1893;10:1611">
+                70%
+              </p>
+              <p className="absolute font-['Inter:Medium'] font-medium leading-[15px] left-[13px] text-[11px] text-[color:var(--recall-secondary-readable,#536e64)] top-[54px] w-[90px]" data-node-id="I10:1893;10:1612">
+                Độ chính xác
+              </p>
+            </div>
+            <div className="[word-break:break-word] absolute bg-[var(--recall-mint,#ddf8f0)] border border-[var(--recall-border,#d5eae2)] border-solid h-[96px] left-[234px] not-italic rounded-[var(--radius-24,24px)] top-[36px] w-[108px]" data-node-id="10:1896" data-name="RecallAI / Statistique">
+              <p className="absolute font-['Inter:Bold'] font-bold leading-[34px] left-[13px] text-[24px] text-[color:var(--recall-ink,#17332d)] top-[11px] w-[80px]" data-node-id="I10:1896;10:1611">
+                24
+              </p>
+              <p className="absolute font-['Inter:Medium'] font-medium leading-[15px] left-[13px] text-[11px] text-[color:var(--recall-secondary-readable,#536e64)] top-[54px] w-[90px]" data-node-id="I10:1896;10:1612">
+                Thẻ cần ôn
+              </p>
+            </div>
+          </div>
+          <div className="bg-[var(--recall-lavender,#eee9fa)] h-[154px] relative rounded-[var(--radius-24,24px)] shrink-0 w-[342px]" data-node-id="10:1899" data-name="Review reminder">
+            <div className="absolute left-[18px] size-[26px] top-[20px]" data-node-id="10:1900" data-name="Icon / clock">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconClock1} />
+            </div>
+            <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[24px] left-[56px] not-italic text-[17px] text-[color:var(--recall-ink,#17332d)] top-[18px] w-[266px]" data-node-id="10:1902">
+              Đến giờ ôn tập rồi!
+            </p>
+            <div className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[18px] not-italic text-[13px] text-[color:var(--recall-secondary-readable,#536e64)] top-[57px] w-[290px]" data-node-id="10:1903">
+              <p className="leading-[18px] mb-0">Bạn có 24 thẻ ghi nhớ</p>
+              <p className="leading-[18px]">cần ôn hôm nay.</p>
+            </div>
+            <a className="absolute bg-[var(--recall-surface,white)] block cursor-pointer h-[28px] left-[18px] rounded-[var(--radius-999,999px)] top-[111px] w-[306px]" data-node-id="10:1904" data-name="CTA / Review now">
+              <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[17px] left-[153px] not-italic text-[12px] text-[color:var(--recall-ink,#17332d)] text-center top-[5px] w-[306px] whitespace-pre-wrap" data-node-id="10:1905">{`Ôn tập ngay   →`}</p>
+            </a>
+          </div>
+          <div className="bg-[var(--recall-background,#f7fffc)] h-[228px] relative shrink-0 w-[342px]" data-node-id="10:1906" data-name="Quick actions">
+            <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[25px] left-0 not-italic text-[18px] text-[color:var(--recall-ink,#17332d)] top-0 w-[342px]" data-node-id="10:1907">
+              Học tập cùng RecallAI
+            </p>
+            <a className="absolute bg-[var(--recall-surface,white)] block border border-[var(--recall-border,#d5eae2)] border-solid cursor-pointer h-[88px] left-0 rounded-[var(--radius-24,24px)] top-[36px] w-[167px]" data-node-id="10:1908" data-name="Quick / 0">
+              <div className="absolute left-[15px] size-[24px] top-[11px]" data-node-id="I10:1908;10:1614" data-name="Icon / upload">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconUpload} />
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[18px] left-[15px] not-italic text-[13px] text-[color:var(--recall-ink,#17332d)] text-left top-[49px] w-[140px]" data-node-id="I10:1908;10:1616">
+                Tải tài liệu
+              </p>
+            </a>
+            <a className="absolute bg-[var(--recall-surface,white)] block border border-[var(--recall-border,#d5eae2)] border-solid cursor-pointer h-[88px] left-[175px] rounded-[var(--radius-24,24px)] top-[36px] w-[167px]" data-node-id="10:1918" data-name="Quick / 1">
+              <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[18px] left-[15px] not-italic text-[13px] text-[color:var(--recall-ink,#17332d)] text-left top-[49px] w-[140px]" data-node-id="I10:1918;10:1616">
+                Luyện tập AI
+              </p>
+              <div className="absolute left-[15px] size-[24px] top-[11px]" data-node-id="I10:1918;10:1617" data-name="Icon / spark">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSpark2} />
+              </div>
+            </a>
+            <a className="absolute bg-[var(--recall-surface,white)] block border border-[var(--recall-border,#d5eae2)] border-solid cursor-pointer h-[88px] left-0 rounded-[var(--radius-24,24px)] top-[132px] w-[167px]" data-node-id="10:1928" data-name="Quick / 2">
+              <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[18px] left-[15px] not-italic text-[13px] text-[color:var(--recall-ink,#17332d)] text-left top-[49px] w-[140px]" data-node-id="I10:1928;10:1616">
+                Flashcard
+              </p>
+              <div className="absolute left-[15px] size-[24px] top-[11px]" data-node-id="I10:1928;10:1619" data-name="Icon / cards">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCards} />
+              </div>
+            </a>
+            <a className="absolute bg-[var(--recall-surface,white)] block border border-[var(--recall-border,#d5eae2)] border-solid cursor-pointer h-[88px] left-[175px] rounded-[var(--radius-24,24px)] top-[132px] w-[167px]" data-node-id="10:1938" data-name="Quick / 3">
+              <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[18px] left-[15px] not-italic text-[13px] text-[color:var(--recall-ink,#17332d)] text-left top-[49px] w-[140px]" data-node-id="I10:1938;10:1616">
+                Lớp học
+              </p>
+              <div className="absolute left-[15px] size-[24px] top-[11px]" data-node-id="I10:1938;10:1621" data-name="Icon / teacher">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconTeacher} />
+              </div>
+            </a>
+          </div>
+          <div className="content-stretch flex flex-col gap-[var(--recall-space-16,16px)] items-start relative shrink-0 w-[342px]" data-node-id="89:10355" data-name="Học tập nâng cao">
+            <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[26px] not-italic relative shrink-0 text-[18px] text-[color:var(--recall-text,#17332d)] w-[342px]" data-node-id="89:10356">
+              Học tập nâng cao
+            </p>
+            <div className="content-stretch cursor-pointer flex gap-[var(--recall-space-16,16px)] items-center relative shrink-0 w-[342px]" data-node-id="89:10357" data-name="Khám phá thêm">
+              <a className="bg-[var(--recall-surface,white)] border border-[var(--recall-border,#ddece7)] border-solid content-stretch drop-shadow-[0px_4px_8px_rgba(13,64,51,0.06)] flex flex-col gap-[var(--recall-space-16,16px)] items-start p-[var(--recall-space-16,16px)] relative rounded-[var(--recall-radius-24,24px)] shrink-0 w-[163px]" data-node-id="89:10358" data-name="Action / analytics">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-[24px]" data-node-id="89:10359" data-name="Biểu tượng / chart">
+                  <div className="relative shrink-0 size-[24px]" data-node-id="I89:10359;36:609" data-name="Biểu tượng / chart">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBiuTngChart} />
+                  </div>
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-deepGreen,#087f69)] text-left w-[131px]" data-node-id="89:10362">
+                  Thống kê
+                </p>
+              </a>
+              <a className="bg-[var(--recall-surface,white)] border border-[var(--recall-border,#ddece7)] border-solid content-stretch drop-shadow-[0px_4px_8px_rgba(13,64,51,0.06)] flex flex-col gap-[var(--recall-space-16,16px)] items-start p-[var(--recall-space-16,16px)] relative rounded-[var(--recall-radius-24,24px)] shrink-0 w-[163px]" data-node-id="89:10363" data-name="Action / planner">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-[24px]" data-node-id="89:10364" data-name="Biểu tượng / calendar">
+                  <div className="relative shrink-0 size-[24px]" data-node-id="I89:10364;36:624" data-name="Biểu tượng / calendar">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBiuTngCalendar} />
+                  </div>
+                </div>
+                <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-deepGreen,#087f69)] text-left w-[131px]" data-node-id="89:10367">
+                  Kế hoạch ôn thi
+                </p>
+              </a>
+            </div>
+          </div>
+          <div className="bg-[var(--recall-background,#f7fffc)] h-[150px] relative shrink-0 w-[342px]" data-node-id="10:1948" data-name="Recent learning">
+            <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[25px] left-0 not-italic text-[18px] text-[color:var(--recall-ink,#17332d)] top-0 w-[240px]" data-node-id="10:1949">
+              Tiếp tục học
+            </p>
+            <div className="absolute bg-[var(--recall-surface,white)] border border-[var(--recall-border,#d5eae2)] border-solid h-[114px] left-0 rounded-[var(--radius-24,24px)] top-[36px] w-[342px]" data-node-id="10:1950" data-name="Recent / Cơ sở dữ liệu">
+              <div className="absolute left-[15px] size-[26px] top-[19px]" data-node-id="10:1951" data-name="Icon / book">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconBook} />
+              </div>
+              <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[21px] left-[57px] not-italic text-[15px] text-[color:var(--recall-ink,#17332d)] top-[13px] w-[250px]" data-node-id="10:1953">
+                Cơ sở dữ liệu
+              </p>
+              <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[17px] left-[57px] not-italic text-[12px] text-[color:var(--recall-secondary-readable,#536e64)] top-[38px] w-[250px]" data-node-id="10:1954">
+                Bộ câu hỏi ôn tập
+              </p>
+              <div className="absolute bg-[var(--recall-mint,#ddf8f0)] h-[5px] left-[15px] rounded-[3px] top-[78px] w-[222px]" data-node-id="10:1955" data-name="Progress / Track" />
+              <div className="absolute bg-[var(--recall-emerald,#00b889)] h-[5px] left-[15px] rounded-[3px] top-[78px] w-[144px]" data-node-id="10:1956" data-name="Progress / 65 percent" />
+              <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[14px] left-[15px] not-italic text-[10px] text-[color:var(--recall-action,#006b54)] top-[89px] w-[80px]" data-node-id="10:1957">
+                65%
+              </p>
+              <button className="[word-break:break-word] absolute block cursor-pointer font-['Inter:Semi_Bold'] font-semibold leading-[0] left-[247px] not-italic text-[12px] text-[color:var(--recall-action,#006b54)] text-left top-[71px] w-[80px]" data-node-id="10:1958">
+                <p className="leading-[17px]">Tiếp tục →</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <RecallAiBottomNavigation className="absolute bg-[var(--recall-surface,white)] border border-[var(--recall-border,#d5eae2)] border-solid drop-shadow-[0px_8px_12px_rgba(36,95,76,0.12)] h-[66px] left-[16px] rounded-[var(--radius-24,24px)] top-[754px] w-[358px]" />
+      <a className="absolute block cursor-pointer h-[66px] left-[94px] top-[754px] w-[67px]" data-node-id="60:10955" data-name="RA / Dashboard nav hit 1" />
+      <a className="absolute block cursor-pointer h-[66px] left-[161px] top-[754px] w-[67px]" data-node-id="60:10957" data-name="RA / Dashboard nav hit 2" />
+      <a className="absolute block cursor-pointer h-[66px] left-[228px] top-[754px] w-[67px]" data-node-id="60:10959" data-name="RA / Dashboard nav hit 3" />
+      <button className="absolute block cursor-pointer h-[66px] left-[295px] top-[754px] w-[67px]" data-node-id="60:10961" data-name="RA / Dashboard nav hit 4" />
+    </div>
+  );
+}

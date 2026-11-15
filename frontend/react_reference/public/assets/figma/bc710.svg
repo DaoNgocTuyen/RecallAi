@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Notifications">
+<path d="M0 20C0 8.95431 8.95431 0 20 0V0C31.0457 0 40 8.95431 40 20V20C40 31.0457 31.0457 40 20 40V40C8.95431 40 0 31.0457 0 20V20Z" fill="white"/>
+<g id="Icon / bell">
+<path id="Vector" d="M18.3333 25.6667H21.6667M15 15.6667C15 14.3406 15.5268 13.0688 16.4645 12.1311C17.4021 11.1935 18.6739 10.6667 20 10.6667C21.3261 10.6667 22.5979 11.1935 23.5355 12.1311C24.4732 13.0688 25 14.3406 25 15.6667V20.6667L26.6667 23.1667H13.3333L15 20.6667V15.6667Z" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" stroke="#006B54"/>
+</g>
+<circle id="Ellipse" cx="31" cy="9" r="3" fill="#00D6A0"/>
+</g>
+</svg>

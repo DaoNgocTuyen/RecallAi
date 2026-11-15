@@ -1,0 +1,299 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/eb6853aa-8389-46c8-a1ab-9e782805333f";
+const imgRobotRecallAi3DNnBcHa = `${assetPathPrefix}/8c0b3.png`;
+const imgBiuTngHome = `${assetPathPrefix}/c2cc6.svg`;
+const imgBiuTngCap = `${assetPathPrefix}/a0f6d.svg`;
+const imgBiuTngBook = `${assetPathPrefix}/a5179.svg`;
+const imgBiuTngFile = `${assetPathPrefix}/cb1f9.svg`;
+const imgBiuTngCheck = `${assetPathPrefix}/70fc5.svg`;
+const imgBiuTngChart = `${assetPathPrefix}/571ad.svg`;
+const imgBiuTngSpark = `${assetPathPrefix}/0f6d3.svg`;
+const imgBiuTngSettings = `${assetPathPrefix}/d974f.svg`;
+const imgBiuTngSearch = `${assetPathPrefix}/7104d.svg`;
+const imgBiuTngBell = `${assetPathPrefix}/7a489.svg`;
+
+type WebSidebarProps = {
+  className?: string;
+  active?: "6";
+};
+
+function WebSidebar({ className, active = "6" }: WebSidebarProps) {
+  return (
+    <div className={className || "bg-[var(--recall-surface,white)] border border-[var(--recall-border,#ddece7)] border-solid h-[900px] relative w-[248px]"} data-node-id="118:10844">
+      <div className="absolute content-stretch flex flex-col gap-[var(--recall-space-16,16px)] items-start left-[23px] top-[23px] w-[200px]" data-node-id="118:10845" data-name="Sidebar content">
+        <div className="content-stretch flex gap-[var(--recall-space-8,8px)] items-center relative shrink-0 w-[200px]" data-node-id="118:10846" data-name="RecallAI logo">
+          <div className="relative rounded-[8px] shrink-0 size-[24px]" data-node-id="118:10847" data-name="Linh vật / Kích thước">
+            <div className="absolute left-0 size-[24px] top-0" data-node-id="I118:10847;33:1031" data-name="Linh vật / Bản gốc">
+              <div className="absolute left-0 rounded-[1.92px] size-[24px] top-0" data-node-id="I118:10847;33:1031;42:1651" data-name="Robot RecallAI 3D · Nền bạc hà">
+                <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none rounded-[1.92px] size-full" src={imgRobotRecallAi3DNnBcHa} />
+              </div>
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[32px] not-italic relative shrink-0 text-[24px] text-[color:var(--recall-text,#17332d)] w-[168px]" data-node-id="118:10850">
+            RecallAI
+          </p>
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--recall-readable,#526d63)] w-[200px]" data-node-id="118:10851">
+          KHÔNG GIAN GIÁO VIÊN
+        </p>
+        <div className="absolute content-stretch flex flex-col gap-[var(--recall-space-8,8px)] items-start left-0 top-[136px] w-[200px]" data-node-id="118:10852" data-name="Navigation items">
+          <div className="content-stretch flex gap-[12px] items-center p-[12px] relative rounded-[var(--recall-radius-12,12px)] shrink-0 w-[200px]" data-node-id="118:10853" data-name="Nav item 0">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[20px]" data-node-id="118:10854" data-name="Biểu tượng / home">
+              <div className="relative shrink-0 size-[20px]" data-node-id="I118:10854;36:573" data-name="Biểu tượng / home">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBiuTngHome} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-readable,#526d63)] w-[144px]" data-node-id="118:10857">
+              Tổng quan
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[12px] items-center p-[12px] relative rounded-[var(--recall-radius-12,12px)] shrink-0 w-[200px]" data-node-id="118:10858" data-name="Nav item 1">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[20px]" data-node-id="118:10859" data-name="Biểu tượng / cap">
+              <div className="relative shrink-0 size-[20px]" data-node-id="I118:10859;36:579" data-name="Biểu tượng / cap">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBiuTngCap} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-readable,#526d63)] w-[144px]" data-node-id="118:10862">
+              Lớp học
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[12px] items-center p-[12px] relative rounded-[var(--recall-radius-12,12px)] shrink-0 w-[200px]" data-node-id="118:10863" data-name="Nav item 2">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[20px]" data-node-id="118:10864" data-name="Biểu tượng / book">
+              <div className="relative shrink-0 size-[20px]" data-node-id="I118:10864;36:606" data-name="Biểu tượng / book">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBiuTngBook} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-readable,#526d63)] w-[144px]" data-node-id="118:10867">
+              Ngân hàng câu hỏi
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[12px] items-center p-[12px] relative rounded-[var(--recall-radius-12,12px)] shrink-0 w-[200px]" data-node-id="118:10868" data-name="Nav item 3">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[20px]" data-node-id="118:10869" data-name="Biểu tượng / file">
+              <div className="relative shrink-0 size-[20px]" data-node-id="I118:10869;36:561" data-name="Biểu tượng / file">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBiuTngFile} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-readable,#526d63)] w-[144px]" data-node-id="118:10872">
+              Bài kiểm tra
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[12px] items-center p-[12px] relative rounded-[var(--recall-radius-12,12px)] shrink-0 w-[200px]" data-node-id="118:10873" data-name="Nav item 4">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[20px]" data-node-id="118:10874" data-name="Biểu tượng / check">
+              <div className="relative shrink-0 size-[20px]" data-node-id="I118:10874;36:570" data-name="Biểu tượng / check">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBiuTngCheck} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-readable,#526d63)] w-[144px]" data-node-id="118:10877">
+              Chấm điểm
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[12px] items-center p-[12px] relative rounded-[var(--recall-radius-12,12px)] shrink-0 w-[200px]" data-node-id="118:10878" data-name="Nav item 5">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[20px]" data-node-id="118:10879" data-name="Biểu tượng / chart">
+              <div className="relative shrink-0 size-[20px]" data-node-id="I118:10879;36:609" data-name="Biểu tượng / chart">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBiuTngChart} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-readable,#526d63)] w-[144px]" data-node-id="118:10882">
+              Thống kê
+            </p>
+          </div>
+          <div className="bg-[var(--recall-mint,#ddf8f0)] content-stretch flex gap-[12px] items-center p-[12px] relative rounded-[var(--recall-radius-12,12px)] shrink-0 w-[200px]" data-node-id="118:10883" data-name="Nav item 6">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[20px]" data-node-id="118:10884" data-name="Biểu tượng / spark">
+              <div className="relative shrink-0 size-[20px]" data-node-id="I118:10884;36:558" data-name="Biểu tượng / spark">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBiuTngSpark} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-deepGreen,#087f69)] w-[144px]" data-node-id="118:10887">
+              Đề xuất ôn tập
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[12px] items-center p-[12px] relative rounded-[var(--recall-radius-12,12px)] shrink-0 w-[200px]" data-node-id="118:10888" data-name="Nav item 7">
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-[20px]" data-node-id="118:10889" data-name="Biểu tượng / settings">
+              <div className="relative shrink-0 size-[20px]" data-node-id="I118:10889;36:612" data-name="Biểu tượng / settings">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBiuTngSettings} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-readable,#526d63)] w-[144px]" data-node-id="118:10892">
+              Cài đặt
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute bg-[var(--recall-background,#f7fffc)] content-stretch flex flex-col gap-[var(--recall-space-8,8px)] items-start left-[23px] not-italic p-[12px] rounded-[var(--recall-radius-16,16px)] top-[759px] w-[200px]" data-node-id="118:10893" data-name="Teacher account">
+        <p className="font-['Inter:Semi_Bold'] font-semibold leading-[22px] relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] w-[176px]" data-node-id="118:10894">
+          Nguyễn Văn A
+        </p>
+        <p className="font-['Inter:Medium'] font-medium leading-[18px] relative shrink-0 text-[12px] text-[color:var(--recall-readable,#526d63)] w-[176px]" data-node-id="118:10895">
+          Giáo viên · Cộng tác giảng dạy
+        </p>
+        <p className="font-['Inter:Medium'] font-medium leading-[18px] relative shrink-0 text-[12px] text-[color:var(--recall-readable,#526d63)] w-[176px]" data-node-id="118:10896">
+          Dữ liệu minh họa
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default function T12DXutOnTp() {
+  return (
+    <div className="bg-[var(--recall-background,#f7fffc)] overflow-clip relative rounded-[var(--recall-radius-20,20px)] size-full" data-node-id="118:12823" data-name="T12 · Đề xuất ôn tập">
+      <WebSidebar className="absolute bg-[var(--recall-surface,white)] border border-[var(--recall-border,#ddece7)] border-solid h-[900px] left-0 top-0 w-[248px]" />
+      <div className="absolute bg-[var(--recall-surface,white)] border border-[var(--recall-border,#ddece7)] border-solid content-stretch flex gap-[24px] h-[80px] items-center left-[248px] px-[32px] top-0 w-[1192px]" data-node-id="118:12877" data-name="Web / Topbar">
+        <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-readable,#526d63)] w-[326px] whitespace-pre-wrap" data-node-id="I118:12877;118:10952">{`Không gian giáo viên  /  Đề xuất ôn tập`}</p>
+        <div className="bg-[var(--recall-background,#f7fffc)] border border-[var(--recall-border,#ddece7)] border-solid content-stretch flex gap-[12px] items-center p-[10px] relative rounded-[var(--recall-radius-12,12px)] shrink-0 w-[380px]" data-node-id="I118:12877;118:10953" data-name="Search">
+          <div className="content-stretch flex flex-col items-start relative shrink-0 w-[20px]" data-node-id="I118:12877;118:10954" data-name="Biểu tượng / search">
+            <div className="relative shrink-0 size-[20px]" data-node-id="I118:12877;118:10954;36:591" data-name="Biểu tượng / search">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBiuTngSearch} />
+            </div>
+          </div>
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--recall-readable,#526d63)] w-[316px]" data-node-id="I118:12877;118:10957">
+            Tìm lớp học, câu hỏi, bài kiểm tra…
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col items-start relative shrink-0 w-[24px]" data-node-id="I118:12877;118:10958" data-name="Biểu tượng / bell">
+          <div className="relative shrink-0 size-[24px]" data-node-id="I118:12877;118:10958;36:615" data-name="Biểu tượng / bell">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBiuTngBell} />
+          </div>
+        </div>
+        <div className="bg-[var(--recall-mint,#ddf8f0)] content-stretch flex flex-col items-start p-[var(--recall-space-8,8px)] relative rounded-[var(--recall-radius-999,999px)] shrink-0 size-[36px]" data-node-id="I118:12877;118:10961" data-name="Teacher avatar">
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--recall-deepGreen,#087f69)] w-[20px]" data-node-id="I118:12877;118:10962">
+            NA
+          </p>
+        </div>
+        <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] w-[200px] whitespace-pre-wrap" data-node-id="I118:12877;118:10963">{`Nguyễn Văn A  ⌄`}</p>
+      </div>
+      <div className="absolute h-[820px] left-[248px] overflow-x-clip overflow-y-auto top-[80px] w-[1192px]" data-node-id="118:12890" data-name="Web viewport">
+        <div className="absolute content-stretch flex flex-col gap-[var(--recall-space-24,24px)] items-start left-[32px] pb-[40px] top-[32px] w-[1128px]" data-node-id="118:12891" data-name="Web content">
+          <p className="[word-break:break-word] font-['Inter:Bold'] font-bold leading-[40px] not-italic relative shrink-0 text-[32px] text-[color:var(--recall-text,#17332d)] w-[1128px]" data-node-id="118:12892">
+            Đề xuất ôn tập
+          </p>
+          <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--recall-readable,#526d63)] w-[1128px]" data-node-id="125:14169">
+            Đề xuất hỗ trợ quyết định, không phải kết luận chắc chắn. Giáo viên xem lại trước khi giao.
+          </p>
+          <div className="bg-[var(--recall-surface,white)] border border-[var(--recall-border,#ddece7)] border-solid content-stretch drop-shadow-[0px_4px_8px_rgba(13,64,51,0.06)] flex flex-col gap-[var(--recall-space-16,16px)] items-start p-[var(--recall-space-24,24px)] relative rounded-[var(--recall-radius-20,20px)] shrink-0 w-[1128px]" data-node-id="125:14170" data-name="Đề xuất / SQL JOIN">
+            <div className="content-stretch flex gap-[var(--recall-space-24,24px)] items-center relative shrink-0 w-[1080px]" data-node-id="125:14171" data-name="Chủ đề và phạm vi">
+              <div className="[word-break:break-word] content-stretch flex flex-col gap-[var(--recall-space-8,8px)] items-start not-italic relative shrink-0 w-[800px]" data-node-id="125:14172" data-name="Đề xuất">
+                <p className="font-['Inter:Semi_Bold'] font-semibold leading-[32px] relative shrink-0 text-[24px] text-[color:var(--recall-text,#17332d)] w-[800px]" data-node-id="125:14173">
+                  SQL JOIN
+                </p>
+                <p className="font-['Inter:Medium'] font-medium leading-[18px] relative shrink-0 text-[12px] text-[color:var(--recall-readable,#526d63)] w-[800px]" data-node-id="125:14174">
+                  Cơ sở dữ liệu – K24
+                </p>
+              </div>
+              <div className="bg-[var(--recall-mint,#ddf8f0)] content-stretch flex gap-[var(--recall-space-8,8px)] items-center p-[var(--recall-space-8,8px)] relative rounded-[var(--recall-radius-12,12px)] shrink-0 w-[101px]" data-node-id="125:14175" data-name="Ưu tiên cao">
+                <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--recall-deepGreen,#087f69)] w-[85px]" data-node-id="125:14176">
+                  Ưu tiên cao
+                </p>
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[24px] not-italic relative shrink-0 text-[16px] text-[color:var(--recall-text,#17332d)] w-[1080px]" data-node-id="125:14177">
+              29 / 50 lượt trả lời chưa chính xác (58%).
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--recall-readable,#526d63)] w-[1080px]" data-node-id="125:14178">
+              Nguồn: kết quả bài kiểm tra trong lớp được phân quyền.
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] w-[1080px]" data-node-id="125:14179">
+              Ôn INNER JOIN, LEFT JOIN và điều kiện ON.
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--recall-deepGreen,#087f69)] w-[1080px]" data-node-id="125:14180">
+              Đề xuất chưa duyệt
+            </p>
+            <div className="content-stretch cursor-pointer flex gap-[var(--recall-space-24,24px)] items-center relative shrink-0 w-[1128px]" data-node-id="125:14181" data-name="Hành động ôn tập">
+              <button className="bg-[var(--recall-surface,white)] border border-[var(--recall-border,#ddece7)] border-solid content-stretch flex h-[44px] items-start min-w-[88px] px-[16px] py-[10px] relative rounded-[var(--recall-radius-12,12px)] shrink-0" data-node-id="125:14182" data-name="Action / recommendation-evidence">
+                <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] text-left whitespace-nowrap" data-node-id="I125:14182;118:10498">
+                  Xem câu hỏi sai
+                </p>
+              </button>
+              <a className="bg-[var(--recall-mint,#ddf8f0)] content-stretch flex h-[44px] items-start min-w-[88px] px-[16px] py-[10px] relative rounded-[var(--recall-radius-12,12px)] shrink-0" data-node-id="125:14184" data-name="Action / review-practice">
+                <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] text-left whitespace-nowrap" data-node-id="I125:14184;118:10489">
+                  Tạo bài luyện tập
+                </p>
+              </a>
+              <button className="bg-[var(--recall-surface,white)] border border-[var(--recall-border,#ddece7)] border-solid content-stretch flex h-[44px] items-start min-w-[88px] px-[16px] py-[10px] relative rounded-[var(--recall-radius-12,12px)] shrink-0" data-node-id="125:14186" data-name="Action / review-flash">
+                <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] text-left whitespace-nowrap" data-node-id="I125:14186;118:10498">
+                  Tạo flashcard
+                </p>
+              </button>
+              <button className="bg-gradient-to-r content-stretch flex from-[#00d6a0] h-[44px] items-start min-w-[88px] px-[16px] py-[10px] relative rounded-[var(--recall-radius-12,12px)] shrink-0 to-[#84efd8]" data-node-id="125:14188" data-name="Action / review-assign">
+                <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] text-left whitespace-nowrap" data-node-id="I125:14188;118:10480">
+                  Giao bài ôn tập
+                </p>
+              </button>
+              <button className="content-stretch flex h-[44px] items-start min-w-[88px] px-[16px] py-[10px] relative rounded-[var(--recall-radius-12,12px)] shrink-0" data-node-id="125:14190" data-name="Action / review-approve">
+                <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] text-left whitespace-nowrap" data-node-id="I125:14190;118:10507">
+                  Xem lại và duyệt
+                </p>
+              </button>
+            </div>
+          </div>
+          <div className="bg-[var(--recall-surface,white)] border border-[var(--recall-border,#ddece7)] border-solid content-stretch drop-shadow-[0px_4px_8px_rgba(13,64,51,0.06)] flex flex-col gap-[var(--recall-space-16,16px)] items-start p-[var(--recall-space-24,24px)] relative rounded-[var(--recall-radius-20,20px)] shrink-0 w-[1128px]" data-node-id="125:14192" data-name="Đề xuất / Entity Framework Core">
+            <div className="content-stretch flex gap-[var(--recall-space-24,24px)] items-center relative shrink-0 w-[1080px]" data-node-id="125:14193" data-name="Chủ đề và phạm vi">
+              <div className="[word-break:break-word] content-stretch flex flex-col gap-[var(--recall-space-8,8px)] items-start not-italic relative shrink-0 w-[800px]" data-node-id="125:14194" data-name="Đề xuất">
+                <p className="font-['Inter:Semi_Bold'] font-semibold leading-[32px] relative shrink-0 text-[24px] text-[color:var(--recall-text,#17332d)] w-[800px]" data-node-id="125:14195">
+                  Entity Framework Core
+                </p>
+                <p className="font-['Inter:Medium'] font-medium leading-[18px] relative shrink-0 text-[12px] text-[color:var(--recall-readable,#526d63)] w-[800px]" data-node-id="125:14196">
+                  Lập trình C# – Nhóm 01
+                </p>
+              </div>
+              <div className="bg-[var(--recall-mint,#ddf8f0)] content-stretch flex gap-[var(--recall-space-8,8px)] items-center p-[var(--recall-space-8,8px)] relative rounded-[var(--recall-radius-12,12px)] shrink-0 w-[101px]" data-node-id="125:14197" data-name="Ưu tiên cao">
+                <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--recall-deepGreen,#087f69)] w-[85px]" data-node-id="125:14198">
+                  Ưu tiên cao
+                </p>
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[24px] not-italic relative shrink-0 text-[16px] text-[color:var(--recall-text,#17332d)] w-[1080px]" data-node-id="125:14199">
+              12 / 30 sinh viên có độ chính xác dưới 60% ở nhóm câu EF Core.
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--recall-readable,#526d63)] w-[1080px]" data-node-id="125:14200">
+              Nguồn: kết quả bài kiểm tra trong lớp được phân quyền.
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Regular'] font-normal leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] w-[1080px]" data-node-id="125:14201">
+              Ôn DbContext, theo dõi thay đổi và SaveChanges.
+            </p>
+            <p className="[word-break:break-word] font-['Inter:Medium'] font-medium leading-[18px] not-italic relative shrink-0 text-[12px] text-[color:var(--recall-deepGreen,#087f69)] w-[1080px]" data-node-id="125:14202">
+              Đề xuất chưa duyệt
+            </p>
+            <div className="content-stretch cursor-pointer flex gap-[var(--recall-space-24,24px)] items-center relative shrink-0 w-[1128px]" data-node-id="125:14203" data-name="Hành động ôn tập">
+              <button className="bg-[var(--recall-surface,white)] border border-[var(--recall-border,#ddece7)] border-solid content-stretch flex h-[44px] items-start min-w-[88px] px-[16px] py-[10px] relative rounded-[var(--recall-radius-12,12px)] shrink-0" data-node-id="125:14204" data-name="Action / recommendation-evidence">
+                <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] text-left whitespace-nowrap" data-node-id="I125:14204;118:10498">
+                  Xem câu hỏi sai
+                </p>
+              </button>
+              <a className="bg-[var(--recall-mint,#ddf8f0)] content-stretch flex h-[44px] items-start min-w-[88px] px-[16px] py-[10px] relative rounded-[var(--recall-radius-12,12px)] shrink-0" data-node-id="125:14206" data-name="Action / review-practice">
+                <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] text-left whitespace-nowrap" data-node-id="I125:14206;118:10489">
+                  Tạo bài luyện tập
+                </p>
+              </a>
+              <button className="bg-[var(--recall-surface,white)] border border-[var(--recall-border,#ddece7)] border-solid content-stretch flex h-[44px] items-start min-w-[88px] px-[16px] py-[10px] relative rounded-[var(--recall-radius-12,12px)] shrink-0" data-node-id="125:14208" data-name="Action / review-flash">
+                <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] text-left whitespace-nowrap" data-node-id="I125:14208;118:10498">
+                  Tạo flashcard
+                </p>
+              </button>
+              <button className="bg-gradient-to-r content-stretch flex from-[#00d6a0] h-[44px] items-start min-w-[88px] px-[16px] py-[10px] relative rounded-[var(--recall-radius-12,12px)] shrink-0 to-[#84efd8]" data-node-id="125:14210" data-name="Action / review-assign">
+                <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] text-left whitespace-nowrap" data-node-id="I125:14210;118:10480">
+                  Giao bài ôn tập
+                </p>
+              </button>
+              <button className="content-stretch flex h-[44px] items-start min-w-[88px] px-[16px] py-[10px] relative rounded-[var(--recall-radius-12,12px)] shrink-0" data-node-id="125:14212" data-name="Action / review-approve">
+                <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[22px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-text,#17332d)] text-left whitespace-nowrap" data-node-id="I125:14212;118:10507">
+                  Xem lại và duyệt
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a className="absolute block cursor-pointer h-[44px] left-[24px] top-[160px] w-[200px]" data-node-id="118:12893" data-name="WebNav / 0" />
+      <a className="absolute block cursor-pointer h-[44px] left-[24px] top-[212px] w-[200px]" data-node-id="118:12894" data-name="WebNav / 1" />
+      <a className="absolute block cursor-pointer h-[44px] left-[24px] top-[264px] w-[200px]" data-node-id="118:12895" data-name="WebNav / 2" />
+      <a className="absolute block cursor-pointer h-[44px] left-[24px] top-[316px] w-[200px]" data-node-id="118:12896" data-name="WebNav / 3" />
+      <a className="absolute block cursor-pointer h-[44px] left-[24px] top-[368px] w-[200px]" data-node-id="118:12897" data-name="WebNav / 4" />
+      <a className="absolute block cursor-pointer h-[44px] left-[24px] top-[420px] w-[200px]" data-node-id="118:12898" data-name="WebNav / 5" />
+      <div className="absolute h-[44px] left-[24px] top-[472px] w-[200px]" data-node-id="118:12899" data-name="WebNav / 6" />
+      <button className="absolute block cursor-pointer h-[44px] left-[24px] top-[524px] w-[200px]" data-node-id="118:12900" data-name="WebNav / 7" />
+      <button className="absolute block cursor-pointer h-[56px] left-[630px] top-[12px] w-[380px]" data-node-id="118:12901" data-name="HeaderAction / search" />
+      <button className="absolute block cursor-pointer h-[56px] left-[1028px] top-[12px] w-[40px]" data-node-id="118:12902" data-name="HeaderAction / notifications" />
+      <button className="absolute block cursor-pointer h-[56px] left-[1074px] top-[12px] w-[320px]" data-node-id="118:12903" data-name="HeaderAction / account" />
+    </div>
+  );
+}

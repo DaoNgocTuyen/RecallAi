@@ -1,0 +1,47 @@
+if(page.children.some(n=>n.name===primaryNames[0]))throw new Error('Screens already exist. Inspect before retrying.');
+mock=figma.variables.createVariableCollection('RecallAI · Học tập mẫu');
+const cfg={quantity:variable('quantity','FLOAT',5),quantityText:variable('quantityText','STRING','5'),type:variable('type','STRING','Kết hợp'),mode:variable('mode','STRING','Bài luyện tập AI'),difficulty:variable('difficulty','STRING','Vừa'),doc:variable('document','STRING','Cơ sở dữ liệu.pdf'),review:variable('review','STRING','24 thẻ'),completed:variable('completed','STRING','0 thẻ'),next:variable('next','STRING','Ngày mai · 09:00'),explanationStatus:variable('saved','STRING','Chưa thêm vào lịch ôn tập'),deleted:variable('deleted','STRING','5 câu hỏi đã sẵn sàng')};
+for(let i=0;i<20;i++){variable('score/'+i,'FLOAT',0);variable('answer/'+i,'STRING','Chưa trả lời');variable('result/'+i,'STRING','Chưa trả lời');}
+const section=figma.createSection();section.name='RecallAI · 06–15 / Hành trình học tập';section.x=3340;section.y=30;section.resizeWithoutConstraints(2270,2100);section.fills=[color('mint')];created.push(section.id);
+const label=text(section,'06–15 · Học tập chủ động cùng RecallAI','Heading 1','deepGreen',2100);label.x=60;label.y=32;
+function documentCard(p,title,date,status,q,f,key){const c=card(p,title);const r=row(c,'PDF');icon(r,'file',28);text(r,status,'Caption',status==='Đang xử lý'?'warningText':'deepGreen',252);text(c,title,'Section');note(c,'Tải lên '+date+' · PDF');note(c,q+' câu hỏi  ·  '+f+' flashcard');action(c,'Mở tài liệu   →',key,'Phụ',310);return c;}
+function libraryBody(s,kind='populated'){
+ const search=inst(s.feed,asset('Biểu mẫu / Tìm kiếm','Trạng thái=Mặc định'),'Action / search');setText(search,'Tìm kiếm tài liệu…',0);const filters=row(s.feed,'Bộ lọc',342,8);for(const label of ['Tất cả','Gần đây','Đã xử lý']){const b=box(filters,'Action / filter-'+label,108,label==='Tất cả'?'mint':'surface','HORIZONTAL',0,8);round(b,999);text(b,label,'Caption','deepGreen',92).textAlignHorizontal='CENTER';}
+ if(kind==='empty'){inst(s.feed,asset('Hệ thống / Trống'),'Action / empty-upload');}else if(kind==='loading'){for(let i=0;i<2;i++)inst(s.feed,asset('Hệ thống / Đang tải'));note(s.feed,'Đang đồng bộ tài liệu…');}else{note(s.feed,kind==='search'?'Kết quả cho “Cơ sở dữ liệu”':'3 tài liệu · Kiến thức luôn trong tầm tay');documentCard(s.feed,'Cơ sở dữ liệu.pdf','11/11/2026','Đã xử lý',20,48,'open-db');if(kind!=='search'){documentCard(s.feed,'Lập trình C#.pdf','10/11/2026','Đã xử lý',15,32,'open-cs');documentCard(s.feed,'Nhập môn trí tuệ nhân tạo.pdf','09/11/2026','Đang xử lý',0,0,'open-ai');}}
+ const fab=action(s.f,'+  Thêm tài liệu','add-doc','Chính',250);fab.x=116;fab.y=694;
+}
+const library=phone(primaryNames[0],0);libraryBody(library);
+const emptyLib=phone('Thư viện · Trống',0,'Tài liệu',true);libraryBody(emptyLib,'empty');
+const loadingLib=phone('Thư viện · Đang tải',0,'Tài liệu',true);libraryBody(loadingLib,'loading');
+const searchLib=phone('Thư viện · Kết quả tìm kiếm',0,'Tài liệu',true);libraryBody(searchLib,'search');
+function uploadBody(s,mode='pdf',selected=false,error=false){
+ const tabs=row(s.feed,'Cách thêm',342,8);for(const label of ['Tải tệp PDF','Nhập văn bản']){const b=box(tabs,'Action / upload-'+label,167,(label==='Tải tệp PDF')===(mode==='pdf')?'mint':'surface','HORIZONTAL',0,12);round(b,16);text(b,label,'Body Small','deepGreen',143).textAlignHorizontal='CENTER';}
+ const area=card(s.feed,'Khu vực tải tài liệu');area.dashPattern=[6,6];area.counterAxisAlignItems='CENTER';icon(area,mode==='pdf'?'upload':'file',40);text(area,mode==='pdf'?'Kéo tệp PDF vào đây':'Dán nội dung bài học','Section','text',310).textAlignHorizontal='CENTER';note(area,mode==='pdf'?'PDF tối đa 20 MB · Chỉ dùng tệp mẫu trong bản trải nghiệm.':'Nội dung mẫu được điền khi chạm vào ô bên dưới.');
+ if(mode==='pdf')action(area,selected?'Chọn tệp khác':'Chọn tệp PDF','choose-file','Viền',272);else{const input=inst(area,asset('Biểu mẫu / Nội dung',selected?'Trạng thái=Đã nhập':'Trạng thái=Mặc định'),'Action / paste-text');if(selected)setText(input,'Khóa chính định danh duy nhất mỗi bản ghi. Khóa ngoại liên kết dữ liệu giữa các bảng.',1);}
+ if(selected){const c=card(s.feed,'Tài liệu đã chọn','mint');const r=row(c,'Tệp đã chọn');icon(r,'file');text(r,mode==='pdf'?'Cơ sở dữ liệu.pdf':'Nội dung đã dán','Body Small','text',270);note(c,mode==='pdf'?'2,4 MB · 24 trang':'112 từ · Sẵn sàng phân tích');action(c,'×  Xóa','remove-file','Văn bản');}
+ if(error){const n=card(s.feed,'Lỗi tải tệp');border(n,'error');text(n,'Hãy chọn tệp PDF hoặc nhập nội dung trước khi tiếp tục.','Body Small','errorText');action(n,'Thử tệp không hợp lệ','bad-file','Văn bản');}
+ action(s.feed,'Phân tích tài liệu','analyze','Chính',320);note(s.feed,'Thao tác tải tệp và phân tích được mô phỏng.');
+}
+const upload=phone(primaryNames[1],1);uploadBody(upload);
+for(const [name,mode,selected,error]of [['Tải lên · Đã chọn PDF','pdf',true,false],['Tải lên · Nhập văn bản','text',false,false],['Tải lên · Văn bản đã dán','text',true,false],['Tải lên · Lỗi dữ liệu','pdf',false,true],['Tải lên · Tệp không hợp lệ','pdf',false,true]]){const s=phone(name,0,'Tài liệu',true);uploadBody(s,mode,selected,error);if(name.endsWith('không hợp lệ'))text(s.feed,'Tệp .docx không được hỗ trợ. Vui lòng chọn PDF.','Body Small','errorText');}
+function processBody(s,done=false){const c=card(s.feed,'Trợ lý đang phân tích','mint');c.counterAxisAlignItems='CENTER';const robot=inst(c,asset('Linh vật / Kích thước','Cỡ=180'),'Robot / floating');text(c,done?'Nội dung đã sẵn sàng!':'Mình đang đọc tài liệu…','Heading 2','text',310).textAlignHorizontal='CENTER';note(c,'Cơ sở dữ liệu.pdf · 24 trang');progress(c,done?100:38);note(c,done?'100% · Đã hoàn thành':'38% · Đang phân tích kiến thức');
+ for(const [i,label]of ['Đọc nội dung tài liệu','Phân tích kiến thức','Xác định các chủ đề chính','Chuẩn bị nội dung học tập'].entries()){const r=row(s.feed,label,342);icon(r,done||i===0?'check':i===1?'clock':'cards',24,done||i<2?'deepGreen':'readable');text(r,label,'Body Small',done||i<2?'text':'readable',302);}
+ action(s.feed,done?'Tiếp tục':'Đang phân tích…',done?'processing-next':'processing-wait','Chính',320);note(s.feed,'Bản trải nghiệm dùng kết quả mẫu; không phân tích tài liệu thật.');return robot;}
+const processing=phone(primaryNames[2],2);processBody(processing);const processingDone=phone('Phân tích · Hoàn thành',0,'Tài liệu',true);processBody(processingDone,true);
+const config=phone(primaryNames[3],3,'Luyện tập');const doc=card(config.feed,'Tài liệu đang học','mint');icon(doc,'file');text(doc,'Cơ sở dữ liệu.pdf','Section');note(doc,'24 trang · Khóa, mô hình quan hệ và SQL');
+text(config.feed,'Bạn muốn học theo cách nào?','Section');inst(config.feed,(await selector('RA / Chế độ học',['Bài luyện tập AI','Flashcard'],cfg.mode)).children[0]);
+text(config.feed,'Dạng câu hỏi','Section');inst(config.feed,(await selector('RA / Dạng câu hỏi',['Kết hợp','Trắc nghiệm','Đúng / Sai','Tự luận'],cfg.type)).children[0]);
+text(config.feed,'Số câu hỏi / thẻ','Section');inst(config.feed,(await selector('RA / Số lượng',['5','10','15','20'],cfg.quantity)).children[0]);
+text(config.feed,'Độ khó','Section');inst(config.feed,(await selector('RA / Độ khó',['Dễ','Vừa','Khó'],cfg.difficulty)).children[1]);
+action(config.feed,'✧  Tạo bằng AI','generate','Chính',320);note(config.feed,'Kết quả minh họa cần được kiểm tra với tài liệu gốc.');
+function previewBody(s,variation='default'){const top=card(s.feed,'Tóm tắt câu hỏi','mint');text(top,'Cơ sở dữ liệu.pdf','Section');const quantity=text(top,'5 câu hỏi','Body Small','deepGreen');bind(quantity,cfg.deleted);note(top,'Các chủ đề: khóa, mô hình dữ liệu và SQL.');
+ const items=variation==='removed'?[bank[0],bank[2]]:variation==='regenerated'?[bank[3],bank[1]]:[bank[0],bank[1]];
+ for(const [i,b]of items.entries()){const c=card(s.feed,'Câu hỏi '+(i+1));pill(c,'CÂU '+(i+1)+' · '+b.topic);text(c,variation==='edited'&&i===0?'Vai trò quan trọng nhất của khóa chính là gì?':b.q,'Section');text(c,'Đáp án: '+b.a[b.correct],'Body Small','deepGreen');note(c,b.ex);const ref=text(c,'Nguồn PDF · Trang '+b.page,'Caption','deepGreen');ref.name='Action / preview-source';const r=row(c,'Chỉnh câu hỏi');for(const [label,key]of [['Sửa','edit'],['Xóa','delete'],['Tạo lại','regenerate']]){const a=box(r,'Action / preview-'+key+'-'+i,95,'mint','HORIZONTAL',0,8);round(a,12);text(a,label,'Caption','deepGreen',79).textAlignHorizontal='CENTER';}}
+ action(s.feed,'Bắt đầu luyện tập','start-quiz','Chính',320);note(s.feed,'Hiển thị 2 câu đầu. Bộ luyện tập dùng số lượng và dạng câu hỏi bạn đã chọn.');}
+const preview=phone(primaryNames[4],4,'Luyện tập');previewBody(preview);for(const [name,v]of [['Câu hỏi · Đã sửa','edited'],['Câu hỏi · Đã xóa','removed'],['Câu hỏi · Tạo lại','regenerated']]){const s=phone(name,0,'Luyện tập',true);previewBody(s,v);}
+const quiz=phone(primaryNames[5],5,'Luyện tập');
+const results=phone(primaryNames[6],6,'Luyện tập');
+const explanation=phone(primaryNames[7],7,'Luyện tập');
+const flashcards=phone(primaryNames[8],8,'Ôn tập');
+const schedule=phone(primaryNames[9],9,'Ôn tập');
+return{createdNodeIds:created,mutatedNodeIds:mutated,primaryScreens:primaryNames.map(name=>{const n=page.children.find(n=>n.name===name);return{id:n.id,name:n.name,width:n.width,height:n.height};}),stateFrames:page.children.filter(n=>n.name.startsWith('RA · ')).map(n=>({id:n.id,name:n.name})),mockCollection:mock.id};

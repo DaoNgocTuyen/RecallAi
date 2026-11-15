@@ -1,0 +1,816 @@
+{
+  "S01": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg",
+      "imgBiuTngClock1": "/assets/figma/bb95a.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg"
+    },
+    "nodeId": "136:13183"
+  },
+  "S02": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg",
+      "imgBiuTngFile1": "/assets/figma/cc024.svg"
+    },
+    "nodeId": "136:14223"
+  },
+  "S03": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg",
+      "imgBiuTngUpload": "/assets/figma/76218.svg"
+    },
+    "nodeId": "136:14297"
+  },
+  "S04": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg"
+    },
+    "nodeId": "136:14371"
+  },
+  "S05": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg"
+    },
+    "nodeId": "136:14445"
+  },
+  "S06": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg"
+    },
+    "nodeId": "136:14519"
+  },
+  "S07": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg",
+      "imgEllipse": "/assets/figma/a42e5.svg",
+      "imgEllipse1": "/assets/figma/7910f.svg",
+      "imgEllipse2": "/assets/figma/ff0bc.svg",
+      "imgEllipse3": "/assets/figma/4c641.svg",
+      "imgEllipse4": "/assets/figma/1532b.svg",
+      "imgEllipse5": "/assets/figma/0faa8.svg",
+      "imgEllipse6": "/assets/figma/668ec.svg",
+      "imgEllipse7": "/assets/figma/72903.svg",
+      "imgEllipse8": "/assets/figma/06727.svg",
+      "imgEllipse9": "/assets/figma/a62e7.svg",
+      "imgEllipse10": "/assets/figma/d0976.svg",
+      "imgEllipse11": "/assets/figma/220f6.svg",
+      "imgEllipse12": "/assets/figma/29a0b.svg",
+      "imgEllipse13": "/assets/figma/3c16b.svg",
+      "imgEllipse14": "/assets/figma/0b5a1.svg",
+      "imgEllipse15": "/assets/figma/e0736.svg",
+      "imgEllipse16": "/assets/figma/0a75d.svg",
+      "imgEllipse17": "/assets/figma/5681c.svg",
+      "imgEllipse18": "/assets/figma/14598.svg",
+      "imgEllipse19": "/assets/figma/4429c.svg"
+    },
+    "nodeId": "136:14593"
+  },
+  "S08": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg"
+    },
+    "nodeId": "136:14667"
+  },
+  "S09": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg",
+      "imgBiuTngCards1": "/assets/figma/6f34e.svg"
+    },
+    "nodeId": "136:14741"
+  },
+  "S10": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg"
+    },
+    "nodeId": "136:14815"
+  },
+  "S11": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg"
+    },
+    "nodeId": "136:14889"
+  },
+  "S12": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg",
+      "imgFrame": "/assets/figma/8200f.svg"
+    },
+    "nodeId": "136:14963"
+  },
+  "S13": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg"
+    },
+    "nodeId": "136:15037"
+  },
+  "S14": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngCards": "/assets/figma/37eeb.svg",
+      "imgBiuTngCalendar": "/assets/figma/e8e33.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngClock": "/assets/figma/a282f.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngSettings": "/assets/figma/76546.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/53873.svg",
+      "imgBiuTngCap1": "/assets/figma/27760.svg"
+    },
+    "nodeId": "136:15111"
+  },
+  "T01": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/4e336.svg",
+      "imgBiuTngCap": "/assets/figma/a0f6d.svg",
+      "imgBiuTngBook": "/assets/figma/a5179.svg",
+      "imgBiuTngFile": "/assets/figma/cb1f9.svg",
+      "imgBiuTngCheck": "/assets/figma/70fc5.svg",
+      "imgBiuTngChart": "/assets/figma/571ad.svg",
+      "imgBiuTngSpark": "/assets/figma/223c6.svg",
+      "imgBiuTngSettings": "/assets/figma/d974f.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg"
+    },
+    "nodeId": "118:10525"
+  },
+  "T02": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/c2cc6.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngBook": "/assets/figma/a5179.svg",
+      "imgBiuTngFile": "/assets/figma/cb1f9.svg",
+      "imgBiuTngCheck": "/assets/figma/70fc5.svg",
+      "imgBiuTngChart": "/assets/figma/571ad.svg",
+      "imgBiuTngSpark": "/assets/figma/223c6.svg",
+      "imgBiuTngSettings": "/assets/figma/d974f.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg"
+    },
+    "nodeId": "118:10964"
+  },
+  "T03": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/c2cc6.svg",
+      "imgBiuTngCap": "/assets/figma/40071.svg",
+      "imgBiuTngBook": "/assets/figma/a5179.svg",
+      "imgBiuTngFile": "/assets/figma/cb1f9.svg",
+      "imgBiuTngCheck": "/assets/figma/70fc5.svg",
+      "imgBiuTngChart": "/assets/figma/571ad.svg",
+      "imgBiuTngSpark": "/assets/figma/223c6.svg",
+      "imgBiuTngSettings": "/assets/figma/d974f.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg"
+    },
+    "nodeId": "118:11016"
+  },
+  "T04": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/c2cc6.svg",
+      "imgBiuTngCap": "/assets/figma/a0f6d.svg",
+      "imgBiuTngBook": "/assets/figma/0c623.svg",
+      "imgBiuTngFile": "/assets/figma/cb1f9.svg",
+      "imgBiuTngCheck": "/assets/figma/70fc5.svg",
+      "imgBiuTngChart": "/assets/figma/571ad.svg",
+      "imgBiuTngSpark": "/assets/figma/223c6.svg",
+      "imgBiuTngSettings": "/assets/figma/d974f.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg",
+      "imgBiuTngUpload": "/assets/figma/76218.svg",
+      "imgBiuTngSpark1": "/assets/figma/9a60a.svg"
+    },
+    "nodeId": "118:10632"
+  },
+  "T05": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/c2cc6.svg",
+      "imgBiuTngCap": "/assets/figma/a0f6d.svg",
+      "imgBiuTngBook": "/assets/figma/0c623.svg",
+      "imgBiuTngFile": "/assets/figma/cb1f9.svg",
+      "imgBiuTngCheck": "/assets/figma/70fc5.svg",
+      "imgBiuTngChart": "/assets/figma/571ad.svg",
+      "imgBiuTngSpark": "/assets/figma/223c6.svg",
+      "imgBiuTngSettings": "/assets/figma/d974f.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg"
+    },
+    "nodeId": "118:10980"
+  },
+  "T06": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/c2cc6.svg",
+      "imgBiuTngCap": "/assets/figma/a0f6d.svg",
+      "imgBiuTngBook": "/assets/figma/0c623.svg",
+      "imgBiuTngFile": "/assets/figma/cb1f9.svg",
+      "imgBiuTngCheck": "/assets/figma/70fc5.svg",
+      "imgBiuTngChart": "/assets/figma/571ad.svg",
+      "imgBiuTngSpark": "/assets/figma/223c6.svg",
+      "imgBiuTngSettings": "/assets/figma/d974f.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg"
+    },
+    "nodeId": "118:10632"
+  },
+  "T07": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/c2cc6.svg",
+      "imgBiuTngCap": "/assets/figma/a0f6d.svg",
+      "imgBiuTngBook": "/assets/figma/a5179.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngCheck": "/assets/figma/70fc5.svg",
+      "imgBiuTngChart": "/assets/figma/571ad.svg",
+      "imgBiuTngSpark": "/assets/figma/223c6.svg",
+      "imgBiuTngSettings": "/assets/figma/d974f.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg"
+    },
+    "nodeId": "118:10479"
+  },
+  "T08": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/c2cc6.svg",
+      "imgBiuTngCap": "/assets/figma/a0f6d.svg",
+      "imgBiuTngBook": "/assets/figma/a5179.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngCheck": "/assets/figma/70fc5.svg",
+      "imgBiuTngChart": "/assets/figma/571ad.svg",
+      "imgBiuTngSpark": "/assets/figma/223c6.svg",
+      "imgBiuTngSettings": "/assets/figma/d974f.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg"
+    },
+    "nodeId": "118:10685"
+  },
+  "T09": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/c2cc6.svg",
+      "imgBiuTngCap": "/assets/figma/a0f6d.svg",
+      "imgBiuTngBook": "/assets/figma/a5179.svg",
+      "imgBiuTngFile": "/assets/figma/66885.svg",
+      "imgBiuTngCheck": "/assets/figma/70fc5.svg",
+      "imgBiuTngChart": "/assets/figma/571ad.svg",
+      "imgBiuTngSpark": "/assets/figma/223c6.svg",
+      "imgBiuTngSettings": "/assets/figma/d974f.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg"
+    },
+    "nodeId": "118:11000"
+  },
+  "T10": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/c2cc6.svg",
+      "imgBiuTngCap": "/assets/figma/a0f6d.svg",
+      "imgBiuTngBook": "/assets/figma/a5179.svg",
+      "imgBiuTngFile": "/assets/figma/cb1f9.svg",
+      "imgBiuTngCheck": "/assets/figma/83252.svg",
+      "imgBiuTngChart": "/assets/figma/571ad.svg",
+      "imgBiuTngSpark": "/assets/figma/223c6.svg",
+      "imgBiuTngSettings": "/assets/figma/d974f.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg"
+    },
+    "nodeId": "118:10738"
+  },
+  "T11": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/c2cc6.svg",
+      "imgBiuTngCap": "/assets/figma/a0f6d.svg",
+      "imgBiuTngBook": "/assets/figma/a5179.svg",
+      "imgBiuTngFile": "/assets/figma/cb1f9.svg",
+      "imgBiuTngCheck": "/assets/figma/70fc5.svg",
+      "imgBiuTngChart": "/assets/figma/c42f9.svg",
+      "imgBiuTngSpark": "/assets/figma/223c6.svg",
+      "imgBiuTngSettings": "/assets/figma/d974f.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg",
+      "imgFrame": "/assets/figma/4cae8.svg"
+    },
+    "nodeId": "125:12924"
+  },
+  "T12": {
+    "assets": {
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngHome": "/assets/figma/c2cc6.svg",
+      "imgBiuTngCap": "/assets/figma/a0f6d.svg",
+      "imgBiuTngBook": "/assets/figma/a5179.svg",
+      "imgBiuTngFile": "/assets/figma/cb1f9.svg",
+      "imgBiuTngCheck": "/assets/figma/70fc5.svg",
+      "imgBiuTngChart": "/assets/figma/571ad.svg",
+      "imgBiuTngSpark": "/assets/figma/0f6d3.svg",
+      "imgBiuTngSettings": "/assets/figma/d974f.svg",
+      "imgBiuTngSearch": "/assets/figma/7104d.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg"
+    },
+    "nodeId": "118:10844"
+  },
+  "M01": {
+    "assets": {
+      "imgIconSpark": "/assets/figma/f734f.svg",
+      "imgEllipse": "/assets/figma/b3bdb.svg",
+      "imgRecallAiCompagnon": "/assets/figma/ee729.svg",
+      "imgIconCards": "/assets/figma/6fe56.svg",
+      "imgIconSpark1": "/assets/figma/49e27.svg",
+      "imgIconSpark2": "/assets/figma/0f8a8.svg"
+    },
+    "nodeId": "10:1653"
+  },
+  "M02": {
+    "assets": {
+      "imgIconSpark": "/assets/figma/f734f.svg",
+      "imgEllipse": "/assets/figma/81d80.svg",
+      "imgRecallAiCompagnon": "/assets/figma/64961.svg",
+      "imgIconFile": "/assets/figma/4c4bc.svg",
+      "imgIconCheck": "/assets/figma/6da82.svg",
+      "imgIconSpark1": "/assets/figma/49e27.svg"
+    },
+    "nodeId": "10:1645"
+  },
+  "M03": {
+    "assets": {
+      "imgIconMail": "/assets/figma/f3f4c.svg",
+      "imgIconSpark": "/assets/figma/f734f.svg",
+      "imgRecallAiCompagnon": "/assets/figma/c48f8.svg",
+      "imgIconLock": "/assets/figma/0e3ef.svg",
+      "imgIconEye": "/assets/figma/4a355.svg"
+    },
+    "nodeId": "10:1606"
+  },
+  "M04": {
+    "assets": {
+      "imgIconCap": "/assets/figma/03812.svg",
+      "imgEllipse": "/assets/figma/dbc4e.svg",
+      "imgIconCheck": "/assets/figma/a04ba.svg",
+      "imgIconSpark": "/assets/figma/f734f.svg",
+      "imgRecallAiCompagnon": "/assets/figma/08ad7.svg",
+      "imgEllipse1": "/assets/figma/3aa0e.svg",
+      "imgIconTeacher": "/assets/figma/96292.svg"
+    },
+    "nodeId": "10:1635"
+  },
+  "M05": {
+    "assets": {
+      "imgIconHome": "/assets/figma/4410f.svg",
+      "imgIconFile": "/assets/figma/c2eaf.svg",
+      "imgIconSpark": "/assets/figma/067ef.svg",
+      "imgIconClock": "/assets/figma/0a158.svg",
+      "imgIconUser": "/assets/figma/212f7.svg",
+      "imgIconSpark1": "/assets/figma/f734f.svg",
+      "imgEllipse": "/assets/figma/ce899.svg",
+      "imgNotifications": "/assets/figma/bc710.svg",
+      "imgRecallAiCompagnon": "/assets/figma/56103.svg",
+      "imgIconClock1": "/assets/figma/5ec5e.svg",
+      "imgIconUpload": "/assets/figma/70a48.svg",
+      "imgIconSpark2": "/assets/figma/4fc24.svg",
+      "imgIconCards": "/assets/figma/6fe56.svg",
+      "imgIconTeacher": "/assets/figma/5ad61.svg",
+      "imgBiuTngChart": "/assets/figma/0ec43.svg",
+      "imgBiuTngCalendar": "/assets/figma/86f75.svg",
+      "imgIconBook": "/assets/figma/6fbbb.svg"
+    },
+    "nodeId": "11:468"
+  },
+  "M06": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngFile1": "/assets/figma/e6924.svg",
+      "imgBiuTngSearch": "/assets/figma/ef923.svg",
+      "imgBiuTngFile2": "/assets/figma/2f463.svg"
+    },
+    "nodeId": "33:455"
+  },
+  "M07": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngFile1": "/assets/figma/e6924.svg",
+      "imgBiuTngUpload": "/assets/figma/76218.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M08": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngFile1": "/assets/figma/e6924.svg",
+      "imgRobotRecallAi3DNnBcHa": "/assets/figma/8c0b3.png",
+      "imgBiuTngCheck": "/assets/figma/94b94.svg",
+      "imgBiuTngClock1": "/assets/figma/a309c.svg",
+      "imgBiuTngCards": "/assets/figma/f3fd1.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M09": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg",
+      "imgBiuTngFile1": "/assets/figma/e6924.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M10": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M11": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg",
+      "imgBiuTngCards": "/assets/figma/904e9.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M12": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg",
+      "imgEllipse": "/assets/figma/e8b89.svg",
+      "imgEllipse1": "/assets/figma/3397c.svg",
+      "imgEllipse2": "/assets/figma/b9661.svg",
+      "imgEllipse3": "/assets/figma/b6a62.svg",
+      "imgEllipse4": "/assets/figma/8fe4a.svg",
+      "imgEllipse5": "/assets/figma/eb2b4.svg",
+      "imgEllipse6": "/assets/figma/1cad0.svg",
+      "imgEllipse7": "/assets/figma/9f1f9.svg",
+      "imgEllipse8": "/assets/figma/a18bd.svg",
+      "imgEllipse9": "/assets/figma/24cf7.svg",
+      "imgEllipse10": "/assets/figma/98057.svg",
+      "imgEllipse11": "/assets/figma/fe474.svg",
+      "imgEllipse12": "/assets/figma/6985a.svg",
+      "imgEllipse13": "/assets/figma/b309f.svg",
+      "imgEllipse14": "/assets/figma/24dd5.svg",
+      "imgEllipse15": "/assets/figma/e8cf1.svg",
+      "imgEllipse16": "/assets/figma/05996.svg",
+      "imgEllipse17": "/assets/figma/fc7af.svg",
+      "imgEllipse18": "/assets/figma/6b713.svg",
+      "imgEllipse19": "/assets/figma/a43fc.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M13": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg",
+      "imgBiuTngFile1": "/assets/figma/e6924.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M14": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngClock1": "/assets/figma/a309c.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M15": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngClock1": "/assets/figma/a309c.svg",
+      "imgBiuTngCards": "/assets/figma/904e9.svg",
+      "imgBiuTngCalendar": "/assets/figma/86f75.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M16": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngUser1": "/assets/figma/e5c0c.svg",
+      "imgFrame": "/assets/figma/1bd64.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M17": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngUser1": "/assets/figma/e5c0c.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M18": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngClock1": "/assets/figma/a309c.svg",
+      "imgBiuTngCap": "/assets/figma/13c03.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M19": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngClock1": "/assets/figma/a309c.svg",
+      "imgBiuTngBook": "/assets/figma/d3f9e.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg",
+      "imgBiuTngCards": "/assets/figma/904e9.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M20": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngUser1": "/assets/figma/e5c0c.svg",
+      "imgBiuTngCap": "/assets/figma/24d01.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M21": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngUser1": "/assets/figma/e5c0c.svg",
+      "imgBiuTngCap": "/assets/figma/13c03.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M22": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngUser1": "/assets/figma/e5c0c.svg",
+      "imgBiuTngCap": "/assets/figma/f380f.svg",
+      "imgBiuTngBell": "/assets/figma/7a489.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M23": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M24": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg"
+    },
+    "nodeId": "36:632"
+  },
+  "M25": {
+    "assets": {
+      "imgBiuTngHome": "/assets/figma/497e7.svg",
+      "imgBiuTngFile": "/assets/figma/c6e3c.svg",
+      "imgBiuTngSpark": "/assets/figma/3d443.svg",
+      "imgBiuTngClock": "/assets/figma/41048.svg",
+      "imgBiuTngUser": "/assets/figma/6ca48.svg",
+      "imgBiuTngHome1": "/assets/figma/59470.svg",
+      "imgBiuTngSpark1": "/assets/figma/bea60.svg",
+      "imgBiuTngFile1": "/assets/figma/e6924.svg"
+    },
+    "nodeId": "36:632"
+  }
+}

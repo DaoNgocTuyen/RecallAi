@@ -1,0 +1,23 @@
+// Buttons: separate style families keep each matrix under 30 variants.
+for(const kind of ['Chính','Phụ','Viền','Văn bản','Biểu tượng']){
+ const set=await family('Nút / '+kind,{Cỡ:['Nhỏ','Vừa','Lớn'],'Trạng thái':['Mặc định','Di chuột','Nhấn','Vô hiệu','Đang tải']},kind==='Biểu tượng'?52:272,52,(c,v)=>{
+   const h={Nhỏ:36,Vừa:44,Lớn:52}[v.Cỡ];layout(c,kind==='Biểu tượng'?h:272,'HORIZONTAL',8,16);c.resize(kind==='Biểu tượng'?h:272,h);c.primaryAxisSizingMode='FIXED';c.primaryAxisAlignItems='CENTER';c.counterAxisAlignItems='CENTER';rounded(c,999);bg(c,kind==='Phụ'?'mint':'surface');if(kind==='Chính')gradient(c);if(kind==='Viền')border(c,'deepGreen');if(kind==='Văn bản')bg(c,null);
+   if(v['Trạng thái']==='Di chuột')bg(c,'mint');if(v['Trạng thái']==='Nhấn')bg(c,'primaryDark');if(v['Trạng thái']==='Vô hiệu'){bg(c,'border');c.opacity=.55;}
+   if(kind==='Biểu tượng')svg(c,v['Trạng thái']==='Đang tải'?'clock':'plus',20);else{if(v['Trạng thái']==='Đang tải')svg(c,'clock',18);const t=text(c,v['Trạng thái']==='Đang tải'?'Đang xử lý…':'Tiếp tục','Body Small','text',180);t.textAlignHorizontal='CENTER';t.name='Nhãn';}
+ });expose(set);await stateLinks(set);
+}
+for(const [name,label,key]of [['Email','Email','mail'],['Mật khẩu','Mật khẩu','eye'],['Tìm kiếm','Tìm tài liệu…','search'],['Mã mời','Nhập mã lớp học','cap'],['Nội dung','Nội dung bài học','file'],['Danh sách','Chọn môn học','chevron']]){
+ const set=await family('Biểu mẫu / '+name,{'Trạng thái':['Mặc định','Tập trung','Đã nhập','Lỗi','Vô hiệu']},320,128,(c,v)=>{
+  layout(c,320,'VERTICAL',8,0);bg(c,null);rounded(c,0);text(c,label,'Caption');const field=frame(c,'Ô nhập',320,'surface','HORIZONTAL',8,16);rounded(field,16);border(field,v['Trạng thái']==='Lỗi'?'error':v['Trạng thái']==='Tập trung'?'deepGreen':'border');field.counterAxisAlignItems='CENTER';field.resize(320,name==='Nội dung'?104:52);field.primaryAxisSizingMode='FIXED';svg(field,key,20,v['Trạng thái']==='Lỗi'?'errorText':'readable');const t=text(field,v['Trạng thái']==='Đã nhập'?(name==='Email'?'minhanh@recallai.vn':name==='Mật khẩu'?'••••••••••':name==='Mã mời'?'RAI-2026':'Cơ sở dữ liệu'):label,'Body Small',v['Trạng thái']==='Đã nhập'?'text':'readable',240);t.name='Nhãn';if(v['Trạng thái']==='Lỗi')text(c,'Vui lòng kiểm tra lại thông tin.','Caption','errorText');if(v['Trạng thái']==='Vô hiệu')c.opacity=.45;
+ });expose(set);await stateLinks(set);
+}
+for(const kind of ['Hộp kiểm','Lựa chọn','Công tắc']){
+const set=await family('Biểu mẫu / '+kind,{'Trạng thái':['Mặc định','Tập trung','Đã nhập','Lỗi','Vô hiệu']},272,44,(c,v)=>{
+layout(c,272,'HORIZONTAL',16,8);c.counterAxisAlignItems='CENTER';bg(c,null);const active=v['Trạng thái']==='Đã nhập';const control=frame(c,kind,kind==='Công tắc'?40:24,active?'deepGreen':'surface','HORIZONTAL',0,0);control.resize(kind==='Công tắc'?40:24,24);control.primaryAxisSizingMode='FIXED';rounded(control,kind==='Hộp kiểm'?8:999);border(control,v['Trạng thái']==='Lỗi'?'error':v['Trạng thái']==='Tập trung'?'deepGreen':'border');if(active)svg(control,'check',20,'surface');if(kind==='Công tắc'&&!active)rect(control,18,18,'border',999);text(c,kind==='Hộp kiểm'?'Nhắc tôi ôn tập':kind==='Lựa chọn'?'Học chủ động':'Thông báo học tập','Body Small','text',200);if(v['Trạng thái']==='Vô hiệu')c.opacity=.4;
+});for(const c of set.children){const dest=set.children.find(n=>n.name==='Trạng thái='+(c.name==='Trạng thái=Đã nhập'?'Mặc định':'Đã nhập'));if(c.name!=='Trạng thái=Vô hiệu')await c.setReactionsAsync([trans(dest.id)]);}}
+// Reuse the existing brand character, preserving its proportions and editable lighting.
+const source=await figma.getNodeByIdAsync('10:1593');const mascotBase=source.clone();masters.appendChild(mascotBase);mascotBase.name='Linh vật / Bản gốc';mascotBase.description='Linh vật RecallAI dạng vector có chuyển sắc, khuôn mặt kính và ánh sáng dịu.';
+const robotSet=await family('Linh vật / Kích thước',{Cỡ:['48','96','180']},180,180,(c,v)=>{bg(c,null);const n=mascotBase.createInstance();c.appendChild(n);const size=Number(v.Cỡ);n.rescale(size/300);c.resize(size,size);n.x=0;n.y=0;});
+const logo=component('Thương hiệu / Logo',272,null,8,0);layout(logo,272,'HORIZONTAL',8,0);logo.counterAxisAlignItems='CENTER';instance(logo,robotSet.children.find(n=>n.name==='Cỡ=48'));text(logo,'RecallAI','Heading 1','text',200);logo.strokes=[];
+const avatar=component('Nhận diện / Ảnh đại diện',48,'mint',0,8);rounded(avatar,999);avatar.resize(48,48);avatar.primaryAxisSizingMode='FIXED';text(avatar,'MA','Caption','deepGreen',32).textAlignHorizontal='CENTER';
+return{page:page.id,createdNodeIds:created,sets:page.findAllWithCriteria({types:['COMPONENT_SET']}).map(n=>({id:n.id,name:n.name,variants:n.children.length})),masters:masters.id};

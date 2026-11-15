@@ -1,0 +1,20 @@
+{
+  "framework": "Flutter 3.38.3 / Dart 3.10.1",
+  "scope": "Frontend only, local mock UI state; no RecallAI API/server implemented",
+  "figmaFileKey": "jtdPE6oTE3hNoAOn3FTbOS",
+  "designCatalogEntries": 51,
+  "analyzer": "No issues found",
+  "widgetAndMockTestsPassed": 67,
+  "targetedRoleScreenTestsAfterAssetUpdate": 2,
+  "layoutWidths": [1440, 390],
+  "webReleaseBuild": "passed",
+  "webBuildOptions": ["--release", "--no-web-resources-cdn"],
+  "browserScreenshotsReviewed": ["student-dashboard-desktop.png", "login-mobile.png", "student-quiz-desktop.png", "teacher-grading-desktop.png", "role-mobile.png"],
+  "browserPageErrors": [],
+  "localFigmaAssetFiles": 126,
+  "missingOrEmptyFigmaAssetFiles": 0,
+  "interFontBytes": 876576,
+  "android": "Project source generated; APK/device build not run",
+  "backendLocation": "../../backend/recallai",
+  "reactReferenceLocation": "../react_reference"
+}

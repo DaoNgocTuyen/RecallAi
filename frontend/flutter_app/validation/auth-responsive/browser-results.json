@@ -1,0 +1,122 @@
+[
+  {
+    "route": "login",
+    "width": 1366,
+    "height": 768,
+    "issues": [],
+    "metrics": {
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "scrollHeight": 768
+    }
+  },
+  {
+    "route": "role",
+    "width": 1366,
+    "height": 768,
+    "issues": [],
+    "metrics": {
+      "width": 1366,
+      "height": 768,
+      "scrollWidth": 1366,
+      "scrollHeight": 768
+    }
+  },
+  {
+    "route": "login",
+    "width": 1440,
+    "height": 900,
+    "issues": [],
+    "metrics": {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollHeight": 900
+    }
+  },
+  {
+    "route": "role",
+    "width": 1440,
+    "height": 900,
+    "issues": [],
+    "metrics": {
+      "width": 1440,
+      "height": 900,
+      "scrollWidth": 1440,
+      "scrollHeight": 900
+    }
+  },
+  {
+    "route": "login",
+    "width": 1920,
+    "height": 1080,
+    "issues": [],
+    "metrics": {
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080
+    }
+  },
+  {
+    "route": "role",
+    "width": 1920,
+    "height": 1080,
+    "issues": [],
+    "metrics": {
+      "width": 1920,
+      "height": 1080,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080
+    }
+  },
+  {
+    "route": "login",
+    "width": 768,
+    "height": 1024,
+    "issues": [],
+    "metrics": {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollHeight": 1024
+    }
+  },
+  {
+    "route": "role",
+    "width": 768,
+    "height": 1024,
+    "issues": [],
+    "metrics": {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "scrollHeight": 1024
+    }
+  },
+  {
+    "route": "login",
+    "width": 390,
+    "height": 844,
+    "issues": [],
+    "metrics": {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844
+    }
+  },
+  {
+    "route": "role",
+    "width": 390,
+    "height": 844,
+    "issues": [],
+    "metrics": {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "scrollHeight": 844
+    }
+  }
+]

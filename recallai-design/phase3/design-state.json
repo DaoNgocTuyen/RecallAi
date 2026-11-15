@@ -1,0 +1,197 @@
+{
+  "runId": "recallai-phase3-16-25",
+  "status": "complete",
+  "fileKey": "jtdPE6oTE3hNoAOn3FTbOS",
+  "sessionId": "0c4dec41-d43d-466b-89de-3a1e83eb9fa7",
+  "pageId": "0:1",
+  "screens": [
+    {
+      "id": "76:7437",
+      "name": "16 · Thống kê học tập",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "76:7850",
+      "name": "17 · Kiến thức cần củng cố",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "76:8092",
+      "name": "18 · Lập kế hoạch ôn thi",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "76:8131",
+      "name": "19 · Kế hoạch học tập",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "76:8170",
+      "name": "20 · Lớp học của tôi",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "76:8209",
+      "name": "21 · Tham gia lớp học",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "76:8248",
+      "name": "22 · Chi tiết lớp học",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "76:8287",
+      "name": "23 · Bài kiểm tra được giao",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "76:8326",
+      "name": "24 · Bài kiểm tra",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "76:8365",
+      "name": "25 · Kết quả kiểm tra",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "preservedScreens": [
+    {
+      "id": "10:1653",
+      "name": "01 · Splash",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "10:1665",
+      "name": "02 · Onboarding",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "10:1677",
+      "name": "03 · Login",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "10:1689",
+      "name": "04 · Role Selection",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "10:1701",
+      "name": "05 · Student Dashboard",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "51:1405",
+      "name": "06 · Thư viện tài liệu",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "51:1687",
+      "name": "07 · Thêm tài liệu học tập",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "51:2052",
+      "name": "08 · AI phân tích tài liệu",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "51:2194",
+      "name": "09 · Tạo nội dung học tập",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "51:2446",
+      "name": "10 · Xem trước câu hỏi",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "51:2742",
+      "name": "11 · Luyện tập kiến thức",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "51:2781",
+      "name": "12 · Kết quả luyện tập",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "51:2820",
+      "name": "13 · Giải thích đáp án",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "51:2859",
+      "name": "14 · Học bằng Flashcard",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "id": "51:2898",
+      "name": "15 · Lịch ôn tập",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "library": {
+    "page": "67:6996",
+    "documentation": "68:7282",
+    "masters": "67:6997",
+    "componentDefinitions": 237
+  },
+  "validation": {
+    "logicChecks": 107,
+    "passed": 107,
+    "failed": 0,
+    "visibleTextOverflow": [],
+    "missingDestinations": [],
+    "fontIssues": [],
+    "all25Frames390x844": true,
+    "all10NewScreensVisuallyReviewed": true
+  },
+  "flows": [
+    "Dashboard → Analytics → Weak topics → Focused self-practice",
+    "Dashboard → Exam planner → Editable proposal → Save → Daily schedule → Task completion",
+    "Dashboard → Classrooms → Invitation → Class details → Assigned quiz → Submission → Permitted results"
+  ],
+  "modelNotes": [
+    "Teacher assessment variables are separate from self-practice.",
+    "Hidden results omit answer counts and explanations; pending grading has no numeric score.",
+    "Published results are a separate released historical assessment belonging to the sample student.",
+    "Teacher submissions are idempotent; answer editing is locked after submission; attempts are limited.",
+    "Planner calculations use the selected date, study time and available weekdays. New plans start 12/11/2026 in the sample dataset.",
+    "Task rescheduling respects available weekdays and completion is idempotent."
+  ],
+  "limits": [
+    "This is an editable Figma Design prototype with local sample data; no backend, real AI generation, class lookup, authorization service or grading integration.",
+    "Form entry uses sample states and selectors rather than unrestricted text entry.",
+    "Teacher countdown advances with simulated question progress and includes an explicit expiry scenario.",
+    "Daily schedule demonstrates two weeks, 09–22/11/2026.",
+    "Logic checks evaluate stored native Figma actions; screenshots verify layout. No browser-driven prototype playback was performed."
+  ]
+}

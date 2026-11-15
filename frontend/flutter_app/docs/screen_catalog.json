@@ -1,0 +1,257 @@
+[
+  {
+    "code": "M01",
+    "figmaNode": "10:1653",
+    "route": "/splash"
+  },
+  {
+    "code": "M02",
+    "figmaNode": "10:1665",
+    "route": "/onboarding"
+  },
+  {
+    "code": "M03",
+    "figmaNode": "10:1677",
+    "route": "/login"
+  },
+  {
+    "code": "M04",
+    "figmaNode": "10:1689",
+    "route": "/role"
+  },
+  {
+    "code": "M05",
+    "figmaNode": "10:1701",
+    "route": "/student/dashboard"
+  },
+  {
+    "code": "M06",
+    "figmaNode": "51:1405",
+    "route": "/student/documents"
+  },
+  {
+    "code": "M07",
+    "figmaNode": "51:1687",
+    "route": "/student/upload"
+  },
+  {
+    "code": "M08",
+    "figmaNode": "51:2052",
+    "route": "/student/processing"
+  },
+  {
+    "code": "M09",
+    "figmaNode": "51:2194",
+    "route": "/student/generator"
+  },
+  {
+    "code": "M10",
+    "figmaNode": "51:2446",
+    "route": "/student/preview"
+  },
+  {
+    "code": "M11",
+    "figmaNode": "51:2742",
+    "route": "/student/quiz"
+  },
+  {
+    "code": "M12",
+    "figmaNode": "51:2781",
+    "route": "/student/results"
+  },
+  {
+    "code": "M13",
+    "figmaNode": "51:2820",
+    "route": "/student/explanation"
+  },
+  {
+    "code": "M14",
+    "figmaNode": "51:2859",
+    "route": "/student/flashcards"
+  },
+  {
+    "code": "M15",
+    "figmaNode": "51:2898",
+    "route": "/student/review"
+  },
+  {
+    "code": "M16",
+    "figmaNode": "76:7437",
+    "route": "/student/analytics"
+  },
+  {
+    "code": "M17",
+    "figmaNode": "76:7850",
+    "route": "/student/weak-topics"
+  },
+  {
+    "code": "M18",
+    "figmaNode": "76:8092",
+    "route": "/student/planner"
+  },
+  {
+    "code": "M19",
+    "figmaNode": "76:8131",
+    "route": "/student/daily"
+  },
+  {
+    "code": "M20",
+    "figmaNode": "76:8170",
+    "route": "/student/classes"
+  },
+  {
+    "code": "M21",
+    "figmaNode": "76:8209",
+    "route": "/student/join"
+  },
+  {
+    "code": "M22",
+    "figmaNode": "76:8248",
+    "route": "/student/classroom"
+  },
+  {
+    "code": "M23",
+    "figmaNode": "76:8287",
+    "route": "/student/assignments"
+  },
+  {
+    "code": "M24",
+    "figmaNode": "76:8326",
+    "route": "/student/assigned-quiz"
+  },
+  {
+    "code": "M25",
+    "figmaNode": "76:8365",
+    "route": "/student/assigned-results"
+  },
+  {
+    "code": "S01",
+    "figmaNode": "136:13183",
+    "route": "/student/dashboard"
+  },
+  {
+    "code": "S02",
+    "figmaNode": "136:14223",
+    "route": "/student/documents"
+  },
+  {
+    "code": "S03",
+    "figmaNode": "136:14297",
+    "route": "/student/studio"
+  },
+  {
+    "code": "S04",
+    "figmaNode": "136:14371",
+    "route": "/student/pdf"
+  },
+  {
+    "code": "S05",
+    "figmaNode": "136:14445",
+    "route": "/student/generator"
+  },
+  {
+    "code": "S06",
+    "figmaNode": "136:14519",
+    "route": "/student/quiz"
+  },
+  {
+    "code": "S07",
+    "figmaNode": "136:14593",
+    "route": "/student/results"
+  },
+  {
+    "code": "S08",
+    "figmaNode": "136:14667",
+    "route": "/student/explanation"
+  },
+  {
+    "code": "S09",
+    "figmaNode": "136:14741",
+    "route": "/student/decks"
+  },
+  {
+    "code": "S10",
+    "figmaNode": "136:14815",
+    "route": "/student/flashcards"
+  },
+  {
+    "code": "S11",
+    "figmaNode": "136:14889",
+    "route": "/student/review"
+  },
+  {
+    "code": "S12",
+    "figmaNode": "136:14963",
+    "route": "/student/analytics"
+  },
+  {
+    "code": "S13",
+    "figmaNode": "136:15037",
+    "route": "/student/planner"
+  },
+  {
+    "code": "S14",
+    "figmaNode": "136:15111",
+    "route": "/student/classes"
+  },
+  {
+    "code": "T01",
+    "figmaNode": "118:11035",
+    "route": "/teacher/dashboard"
+  },
+  {
+    "code": "T02",
+    "figmaNode": "118:11983",
+    "route": "/teacher/classes"
+  },
+  {
+    "code": "T03",
+    "figmaNode": "118:12067",
+    "route": "/teacher/classroom"
+  },
+  {
+    "code": "T04",
+    "figmaNode": "118:12151",
+    "route": "/teacher/generate"
+  },
+  {
+    "code": "T05",
+    "figmaNode": "118:12235",
+    "route": "/teacher/questions"
+  },
+  {
+    "code": "T06",
+    "figmaNode": "118:12319",
+    "route": "/teacher/edit"
+  },
+  {
+    "code": "T07",
+    "figmaNode": "118:12403",
+    "route": "/teacher/builder"
+  },
+  {
+    "code": "T08",
+    "figmaNode": "118:12487",
+    "route": "/teacher/assign"
+  },
+  {
+    "code": "T09",
+    "figmaNode": "118:12571",
+    "route": "/teacher/quizzes"
+  },
+  {
+    "code": "T10",
+    "figmaNode": "118:12655",
+    "route": "/teacher/grading"
+  },
+  {
+    "code": "T11",
+    "figmaNode": "118:12739",
+    "route": "/teacher/analytics"
+  },
+  {
+    "code": "T12",
+    "figmaNode": "118:12823",
+    "route": "/teacher/recommendations"
+  }
+]

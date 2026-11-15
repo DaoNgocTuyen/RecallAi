@@ -1,0 +1,97 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/68b49bf4-3b56-49c4-be56-1cd84b69c98a";
+const imgIconSpark = `${assetPathPrefix}/f734f.svg`;
+const imgEllipse = `${assetPathPrefix}/81d80.svg`;
+const imgRecallAiCompagnon = `${assetPathPrefix}/64961.svg`;
+const imgIconFile = `${assetPathPrefix}/4c4bc.svg`;
+const imgIconCheck = `${assetPathPrefix}/6da82.svg`;
+const imgIconSpark1 = `${assetPathPrefix}/49e27.svg`;
+
+function RecallAiProgression({ className }: { className?: string }) {
+  return (
+    <div className={className || "bg-[var(--recall-background,#f7fffc)] h-[8px] relative rounded-[4px] w-[72px]"} data-node-id="10:1645" data-name="RecallAI / Progression">
+      <div className="absolute bg-[var(--recall-action,#006b54)] h-[8px] left-0 rounded-[4px] top-0 w-[16px]" data-node-id="10:1646" data-name="Étape 1" />
+      <div className="absolute bg-[var(--recall-border,#d5eae2)] h-[8px] left-[24px] rounded-[4px] top-0 w-[16px]" data-node-id="10:1647" data-name="Étape 2" />
+      <div className="absolute bg-[var(--recall-border,#d5eae2)] h-[8px] left-[48px] rounded-[4px] top-0 w-[16px]" data-node-id="10:1648" data-name="Étape 3" />
+    </div>
+  );
+}
+
+export default function Component02Onboarding() {
+  return (
+    <div className="bg-gradient-to-b from-[#ddf8f0] overflow-clip relative rounded-[var(--radius-28,28px)] shadow-[0px_8px_24px_0px_rgba(36,95,76,0.07)] size-full to-[#f7fffc]" data-node-id="10:1665" data-name="02 · Onboarding">
+      <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[20px] left-[24px] not-italic text-[14px] text-[color:var(--recall-ink,#17332d)] top-[15px] w-[80px]" data-node-id="10:1666">
+        9:41
+      </p>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[4px] left-[298px] rounded-[1px] top-[25px] w-[3px]" data-node-id="10:1667" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[6px] left-[302px] rounded-[1px] top-[23px] w-[3px]" data-node-id="10:1668" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[8px] left-[306px] rounded-[1px] top-[21px] w-[3px]" data-node-id="10:1669" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[10px] left-[310px] rounded-[1px] top-[19px] w-[3px]" data-node-id="10:1670" data-name="Signal" />
+      <div className="absolute left-[320px] size-[15px] top-[16px]" data-node-id="10:1671" data-name="Icon / spark">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSpark} />
+      </div>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[10px] left-[344px] rounded-[3px] top-[21px] w-[22px]" data-node-id="10:1673" data-name="Batterie">
+        <div className="absolute bg-[var(--recall-surface,white)] h-[6px] left-[2px] rounded-[1px] top-[2px] w-[16px]" data-node-id="10:1674" data-name="Charge" />
+      </div>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[4px] left-[130px] rounded-[2px] top-[824px] w-[130px]" data-node-id="10:1675" data-name="Indicateur" />
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[25px] left-[24px] not-italic text-[18px] text-[color:var(--recall-ink,#17332d)] top-[70px] w-[160px]" data-node-id="10:1741">
+        RecallAI
+      </p>
+      <a className="-translate-x-full [word-break:break-word] absolute block cursor-pointer font-['Inter:Semi_Bold'] font-semibold leading-[0] left-[366px] not-italic text-[13px] text-[color:var(--recall-action,#006b54)] text-right top-[74px] w-[72px]" data-node-id="10:1742">
+        <p className="leading-[18px]">Bỏ qua</p>
+      </a>
+      <div className="absolute bg-[var(--recall-surface,white)] h-[28px] left-[24px] opacity-85 rounded-[var(--radius-999,999px)] top-[128px] w-[180px]" data-node-id="10:1743" data-name="01 / KHÁM PHÁ RECALLAI">
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[14px] left-[90px] not-italic text-[10px] text-[color:var(--recall-action,#006b54)] text-center top-[5px] w-[164px]" data-node-id="10:1744">
+          01 / KHÁM PHÁ RECALLAI
+        </p>
+      </div>
+      <div className="absolute left-[34px] size-[320px] top-[213px]" data-node-id="10:1745" data-name="Ellipse">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+      </div>
+      <div className="absolute left-[72px] size-[250px] top-[216px]" data-node-id="10:1746" data-name="RecallAI / Compagnon">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRecallAiCompagnon} />
+      </div>
+      <div className="absolute flex h-[132.593px] items-center justify-center left-[30px] top-[196.87px] w-[114.107px]" data-node-id="10:1759">
+        <div className="-rotate-12 flex-none">
+          <div className="bg-[var(--recall-surface,white)] drop-shadow-[0px_8px_12px_rgba(36,95,76,0.07)] h-[116px] relative rounded-[20px] w-[92px]" data-name="PDF · editable card">
+            <div className="absolute left-[16px] size-[28px] top-[16px]" data-node-id="10:1760" data-name="Icon / file">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconFile} />
+            </div>
+            <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[20px] left-[16px] not-italic text-[14px] text-[color:var(--recall-action,#006b54)] top-[56px] w-[60px]" data-node-id="10:1762">
+              PDF
+            </p>
+            <div className="absolute bg-[var(--recall-mint,#ddf8f0)] h-[4px] left-[16px] rounded-[2px] top-[86px] w-[58px]" data-node-id="10:1763" data-name="Ligne" />
+          </div>
+        </div>
+      </div>
+      <div className="absolute flex h-[107.351px] items-center justify-center left-[229.92px] top-[346px] w-[130.626px]" data-node-id="10:1764">
+        <div className="flex-none rotate-9">
+          <div className="bg-[var(--recall-surface,white)] drop-shadow-[0px_8px_12px_rgba(36,95,76,0.07)] h-[90px] relative rounded-[20px] w-[118px]" data-name="Quiz · editable card">
+            <div className="absolute left-[14px] size-[20px] top-[14px]" data-node-id="10:1765" data-name="Icon / check">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCheck} />
+            </div>
+            <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[17px] left-[14px] not-italic text-[12px] text-[color:var(--recall-ink,#17332d)] top-[44px] w-[100px]" data-node-id="10:1767">
+              Flashcard
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="absolute left-[284px] size-[24px] top-[191px]" data-node-id="10:1768" data-name="Icon / spark">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSpark1} />
+      </div>
+      <div className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[0] left-[24px] not-italic text-[30px] text-[color:var(--recall-ink,#17332d)] top-[503px] w-[342px]" data-node-id="10:1770">
+        <p className="leading-[38px] mb-0">Biến tài liệu</p>
+        <p className="leading-[38px]">thành kiến thức</p>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[20px] left-[24px] not-italic text-[14px] text-[color:var(--recall-secondary-readable,#536e64)] top-[601px] w-[334px]" data-node-id="10:1771">
+        Tải tài liệu PDF hoặc nhập nội dung bài học để AI hỗ trợ tạo câu hỏi và thẻ ghi nhớ.
+      </p>
+      <RecallAiProgression className="absolute bg-[var(--recall-background,#f7fffc)] h-[8px] left-[24px] rounded-[4px] top-[680px] w-[72px]" />
+      <a className="absolute bg-gradient-to-b content-stretch cursor-pointer drop-shadow-[0px_8px_12px_rgba(36,95,76,0.1)] flex from-[#00d6a0] h-[56px] items-center justify-center left-[24px] px-[24px] rounded-[var(--radius-999,999px)] to-[#81e8cd] top-[728px] w-[342px]" data-node-id="10:1776" data-name="CTA / Tiếp tục   →">
+        <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-ink,#17332d)] text-center whitespace-pre" data-node-id="I10:1776;10:1588">{`Tiếp tục   →`}</p>
+      </a>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[15px] left-[195px] not-italic text-[11px] text-[color:var(--recall-secondary-readable,#536e64)] text-center top-[793px] w-[342px]" data-node-id="10:1778">
+        Học ít hơn. Nhớ nhiều hơn.
+      </p>
+    </div>
+  );
+}

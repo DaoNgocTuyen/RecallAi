@@ -1,0 +1,98 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/48744655-e8d4-4ae6-9e8e-d358743a47ac";
+const imgIconMail = `${assetPathPrefix}/f3f4c.svg`;
+const imgIconSpark = `${assetPathPrefix}/f734f.svg`;
+const imgRecallAiCompagnon = `${assetPathPrefix}/c48f8.svg`;
+const imgIconLock = `${assetPathPrefix}/0e3ef.svg`;
+const imgIconEye = `${assetPathPrefix}/4a355.svg`;
+
+function RecallAiInput({ className }: { className?: string }) {
+  return (
+    <div className={className || "bg-[var(--recall-surface,white)] border border-[var(--recall-border,#d5eae2)] border-solid h-[60px] relative rounded-[var(--radius-16,16px)] w-[342px]"} data-node-id="10:1606" data-name="RecallAI / Input">
+      <div className="absolute left-[17px] size-[24px] top-[17px]" data-node-id="10:1607" data-name="Icon / mail">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconMail} />
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[22px] left-[55px] not-italic text-[14px] text-[color:var(--recall-secondary-readable,#536e64)] top-[19px] w-[232px]" data-node-id="10:1609">
+        Email
+      </p>
+    </div>
+  );
+}
+
+export default function Component03Login() {
+  return (
+    <div className="bg-gradient-to-b from-[#f0fcf7] overflow-clip relative rounded-[var(--radius-28,28px)] shadow-[0px_8px_24px_0px_rgba(36,95,76,0.07)] size-full to-[#f7fffc]" data-node-id="10:1677" data-name="03 · Login">
+      <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[20px] left-[24px] not-italic text-[14px] text-[color:var(--recall-ink,#17332d)] top-[15px] w-[80px]" data-node-id="10:1678">
+        9:41
+      </p>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[4px] left-[298px] rounded-[1px] top-[25px] w-[3px]" data-node-id="10:1679" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[6px] left-[302px] rounded-[1px] top-[23px] w-[3px]" data-node-id="10:1680" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[8px] left-[306px] rounded-[1px] top-[21px] w-[3px]" data-node-id="10:1681" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[10px] left-[310px] rounded-[1px] top-[19px] w-[3px]" data-node-id="10:1682" data-name="Signal" />
+      <div className="absolute left-[320px] size-[15px] top-[16px]" data-node-id="10:1683" data-name="Icon / spark">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSpark} />
+      </div>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[10px] left-[344px] rounded-[3px] top-[21px] w-[22px]" data-node-id="10:1685" data-name="Batterie">
+        <div className="absolute bg-[var(--recall-surface,white)] h-[6px] left-[2px] rounded-[1px] top-[2px] w-[16px]" data-node-id="10:1686" data-name="Charge" />
+      </div>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[4px] left-[130px] rounded-[2px] top-[824px] w-[130px]" data-node-id="10:1687" data-name="Indicateur" />
+      <div className="absolute left-[138px] size-[114px] top-[55px]" data-node-id="10:1779" data-name="RecallAI / Compagnon">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRecallAiCompagnon} />
+      </div>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[22px] left-[195px] not-italic text-[16px] text-[color:var(--recall-action,#006b54)] text-center top-[170px] w-[342px]" data-node-id="10:1792">
+        RecallAI
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[39px] left-[24px] not-italic text-[28px] text-[color:var(--recall-ink,#17332d)] top-[212px] w-[342px]" data-node-id="10:1793">
+        Chào mừng trở lại!
+      </p>
+      <div className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[0] left-[24px] not-italic text-[14px] text-[color:var(--recall-secondary-readable,#536e64)] top-[258px] w-[342px]" data-node-id="10:1794">
+        <p className="leading-[20px] mb-0">Đăng nhập để tiếp tục hành trình</p>
+        <p className="leading-[20px]">học tập của bạn.</p>
+      </div>
+      <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[17px] left-[24px] not-italic text-[12px] text-[color:var(--recall-ink,#17332d)] top-[332px] w-[342px]" data-node-id="10:1795">
+        Email
+      </p>
+      <RecallAiInput className="absolute bg-[var(--recall-surface,white)] block border border-[var(--recall-border,#d5eae2)] border-solid cursor-pointer h-[60px] left-[24px] rounded-[var(--radius-16,16px)] top-[356px] w-[342px]" />
+      <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[17px] left-[24px] not-italic text-[12px] text-[color:var(--recall-ink,#17332d)] top-[438px] w-[342px]" data-node-id="10:1800">
+        Mật khẩu
+      </p>
+      <a className="absolute bg-[var(--recall-surface,white)] block border border-[var(--recall-border,#d5eae2)] border-solid cursor-pointer h-[60px] left-[24px] rounded-[var(--radius-16,16px)] top-[462px] w-[342px]" data-node-id="10:1801" data-name="Input / Password">
+        <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[22px] left-[55px] not-italic text-[14px] text-[color:var(--recall-secondary-readable,#536e64)] text-left top-[19px] w-[232px]" data-node-id="I10:1801;10:1609">
+          Mật khẩu
+        </p>
+      </a>
+      <div className="absolute left-[42px] size-[24px] top-[480px]" data-node-id="10:1805" data-name="Icon / lock">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconLock} />
+      </div>
+      <a className="absolute block cursor-pointer left-[326px] size-[22px] top-[481px]" data-node-id="10:1807" data-name="Icon / eye">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconEye} />
+      </a>
+      <p className="-translate-x-full [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[17px] left-[366px] not-italic text-[12px] text-[color:var(--recall-action,#006b54)] text-right top-[540px] w-[166px]" data-node-id="10:1809">
+        Quên mật khẩu?
+      </p>
+      <a className="absolute bg-gradient-to-b content-stretch cursor-pointer drop-shadow-[0px_8px_12px_rgba(36,95,76,0.1)] flex from-[#00d6a0] h-[56px] items-center justify-center left-[24px] px-[24px] rounded-[var(--radius-999,999px)] to-[#81e8cd] top-[578px] w-[342px]" data-node-id="10:1810" data-name="CTA / Đăng nhập">
+        <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-ink,#17332d)] text-center whitespace-nowrap" data-node-id="I10:1810;10:1588">
+          Đăng nhập
+        </p>
+      </a>
+      <div className="absolute bg-[var(--recall-border,#d5eae2)] h-px left-[24px] top-[667px] w-[128px]" data-node-id="10:1812" data-name="Separator" />
+      <div className="absolute bg-[var(--recall-border,#d5eae2)] h-px left-[238px] top-[667px] w-[128px]" data-node-id="10:1813" data-name="Separator" />
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[17px] left-[195px] not-italic text-[12px] text-[color:var(--recall-secondary-readable,#536e64)] text-center top-[656px] w-[70px]" data-node-id="10:1814">
+        Hoặc
+      </p>
+      <a className="[word-break:break-word] absolute bg-[var(--recall-surface,white)] block border border-[var(--recall-border,#d5eae2)] border-solid cursor-pointer h-[52px] left-[24px] not-italic rounded-[var(--radius-999,999px)] text-left top-[696px] w-[342px]" data-node-id="10:1815" data-name="CTA / Google">
+        <p className="absolute font-['Inter:Bold'] font-bold leading-[28px] left-[23px] text-[20px] text-[color:var(--recall-action,#006b54)] top-[11px] w-[24px]" data-node-id="10:1816">
+          G
+        </p>
+        <p className="absolute font-['Inter:Semi_Bold'] font-semibold leading-[20px] left-[61px] text-[14px] text-[color:var(--recall-ink,#17332d)] top-[15px] w-[240px]" data-node-id="10:1817">
+          Tiếp tục với Google
+        </p>
+      </a>
+      <p className="[word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[17px] left-[30px] not-italic text-[12px] text-[color:var(--recall-secondary-readable,#536e64)] top-[777px] w-[162px]" data-node-id="10:1818">
+        Chưa có tài khoản?
+      </p>
+      <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[17px] left-[192px] not-italic text-[12px] text-[color:var(--recall-action,#006b54)] top-[777px] w-[168px]" data-node-id="10:1819">
+        Đăng ký ngay
+      </p>
+    </div>
+  );
+}

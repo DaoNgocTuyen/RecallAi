@@ -1,0 +1,266 @@
+{
+  "fileKey": "jtdPE6oTE3hNoAOn3FTbOS",
+  "section": "RecallAI – Student Web",
+  "sectionId": "136:13180",
+  "entry": "https://www.figma.com/design/jtdPE6oTE3hNoAOn3FTbOS/Untitled?node-id=136-13183",
+  "delivery": "Native editable Figma Design frames and interactive mock prototype",
+  "audit": {
+    "checks": [
+      {
+        "name": "all 14 primary Student Web screens are 1440x900",
+        "pass": true
+      },
+      {
+        "name": "25 original mobile screens preserved",
+        "pass": true
+      },
+      {
+        "name": "12 original teacher screens preserved",
+        "pass": true
+      },
+      {
+        "name": "237 original library components preserved",
+        "pass": true
+      },
+      {
+        "name": "no visible text overflows",
+        "pass": true
+      },
+      {
+        "name": "no horizontal row overflows",
+        "pass": true
+      }
+    ],
+    "overflow": [],
+    "rowOverflow": [],
+    "screens": [
+      {
+        "id": "136:13183",
+        "name": "S01 · Tổng quan học tập",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:14223",
+        "name": "S02 · Thư viện tài liệu",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:14297",
+        "name": "S03 · AI Learning Studio",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:14371",
+        "name": "S04 · Không gian học tập",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:14445",
+        "name": "S05 · Tạo bài luyện tập",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:14519",
+        "name": "S06 · Luyện tập kiến thức",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:14593",
+        "name": "S07 · Kết quả luyện tập",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:14667",
+        "name": "S08 · Giải thích đáp án",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:14741",
+        "name": "S09 · Bộ thẻ ghi nhớ",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:14815",
+        "name": "S10 · Học bằng Flashcard",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:14889",
+        "name": "S11 · Lịch ôn tập",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:14963",
+        "name": "S12 · Thống kê học tập",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:15037",
+        "name": "S13 · Kế hoạch ôn thi",
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "id": "136:15111",
+        "name": "S14 · Lớp học của tôi",
+        "width": 1440,
+        "height": 900
+      }
+    ],
+    "responsive": [
+      {
+        "id": "157:18001",
+        "name": "SW · Responsive · Laptop · 1280",
+        "width": 1280,
+        "height": 900
+      },
+      {
+        "id": "157:18181",
+        "name": "SW · Responsive · Tablet · 1024",
+        "width": 1024,
+        "height": 900
+      },
+      {
+        "id": "157:18361",
+        "name": "SW · Responsive · Sidebar collapsed · 1440",
+        "width": 1440,
+        "height": 900
+      }
+    ],
+    "studentAuxiliaryFrames": 65
+  },
+  "validation": {
+    "practice": {
+      "checks": 36,
+      "passed": 36,
+      "failures": []
+    },
+    "flows": {
+      "checks": 35,
+      "passed": 35,
+      "failures": []
+    },
+    "teacherShared": {
+      "checks": 21,
+      "passed": 21,
+      "failures": []
+    },
+    "finalInteractions": {
+      "checks": 10,
+      "passed": 10,
+      "failures": []
+    },
+    "method": "In-memory execution of serialized native prototype actions, canvas geometry inspection, and rendered visual review. No backend or live service tests.",
+    "finalNavigation": {
+      "checks": 3,
+      "passed": 3,
+      "failures": [],
+      "fontIssues": [],
+      "selected": "136:13183"
+    },
+    "totalPassedActionChecks": 105,
+    "preservedLayoutChecks": 6,
+    "fontIssues": []
+  },
+  "prototypeTargetsAudit": {
+    "missingTargets": [],
+    "selfTargets": []
+  },
+  "ports": {
+    "85:8046": "148:14391",
+    "85:8222": "148:15621",
+    "85:8318": "148:15746",
+    "85:8414": "148:15869",
+    "85:8590": "148:16018",
+    "85:8686": "148:16143",
+    "85:8782": "148:16266",
+    "85:8958": "148:16415",
+    "85:9054": "148:16540",
+    "85:9150": "148:16663",
+    "85:9326": "148:16812",
+    "85:9422": "148:16937",
+    "85:9518": "148:17060",
+    "85:9694": "148:17209",
+    "85:9790": "148:17334",
+    "85:9886": "148:17457",
+    "85:10062": "148:17606",
+    "85:10158": "148:17731",
+    "85:10254": "148:17854",
+    "85:10430": "148:18003",
+    "130:13704": "149:15571",
+    "130:13776": "149:16784",
+    "130:13848": "149:16896",
+    "130:13920": "149:17008",
+    "130:13992": "149:17120",
+    "130:14064": "149:17232",
+    "130:14136": "149:17344",
+    "130:14208": "149:17456",
+    "130:14280": "149:17568",
+    "130:14352": "149:17680",
+    "130:14424": "149:17792",
+    "130:14496": "149:17904",
+    "76:8326": "150:16291",
+    "76:8365": "150:17503",
+    "76:8287": "150:17624",
+    "85:10843": "150:17796",
+    "85:10853": "150:17810",
+    "85:10861": "150:17822",
+    "85:10871": "150:17834",
+    "85:10553": "150:17844",
+    "85:10607": "150:17946",
+    "85:10659": "150:18049",
+    "85:10879": "150:18279",
+    "85:10927": "150:18376",
+    "85:10977": "150:18477",
+    "130:13462": "150:18577",
+    "130:13552": "150:18670",
+    "130:13603": "150:18768",
+    "130:13414": "150:18903",
+    "80:8470": "151:17071",
+    "80:8521": "151:18277",
+    "80:8572": "151:18382",
+    "80:8624": "151:18489",
+    "80:8676": "151:18596",
+    "80:8721": "151:18688",
+    "80:8774": "151:18792",
+    "80:9048": "151:18894",
+    "80:9119": "151:19024",
+    "80:9190": "151:19186",
+    "130:13509": "151:19296",
+    "130:14568": "152:17731",
+    "77:7668": "154:17738",
+    "77:7676": "154:17749",
+    "77:7684": "154:17760",
+    "77:7693": "154:17772",
+    "79:8134": "154:17783",
+    "79:8150": "154:17810",
+    "79:8158": "154:17841",
+    "79:8169": "154:17856",
+    "99:9157": "154:17864",
+    "77:8085": "154:17872",
+    "77:8135": "136:15037",
+    "76:8131": "136:15037",
+    "77:7728": "136:15037",
+    "77:7965": "136:15037"
+  },
+  "mockBoundaries": [
+    "No actual AI, PDF extraction, backend, database, authentication, or realtime synchronization.",
+    "Form fields use selectable preset inputs; PDF pages and references are clearly labeled mock content.",
+    "Quiz and review timers are simulated prototype states, not wall-clock timing.",
+    "CSDL contains the complete practice fixture. Other document generation routes explain the unavailable fixture; C# and REST flashcard sessions contain representative mock cards.",
+    "Flashcard flip uses Smart Animate through front, edge, and back states.",
+    "One active newly published Teacher Web assignment is represented. Teacher-confirmed grades and permitted results use shared Figma variables."
+  ]
+}

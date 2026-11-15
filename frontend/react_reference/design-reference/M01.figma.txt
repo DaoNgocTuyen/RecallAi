@@ -1,0 +1,69 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/516fef38-cdea-4c72-9a6d-26ad4e2f675a";
+const imgIconSpark = `${assetPathPrefix}/f734f.svg`;
+const imgEllipse = `${assetPathPrefix}/b3bdb.svg`;
+const imgRecallAiCompagnon = `${assetPathPrefix}/ee729.svg`;
+const imgIconCards = `${assetPathPrefix}/6fe56.svg`;
+const imgIconSpark1 = `${assetPathPrefix}/49e27.svg`;
+const imgIconSpark2 = `${assetPathPrefix}/0f8a8.svg`;
+
+export default function Component01Splash() {
+  return (
+    <div className="bg-gradient-to-b from-[#ddf8f0] overflow-clip relative rounded-[var(--radius-28,28px)] shadow-[0px_8px_24px_0px_rgba(36,95,76,0.07)] size-full to-[#d9f8fa]" data-node-id="10:1653" data-name="01 · Splash">
+      <p className="[word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[20px] left-[24px] not-italic text-[14px] text-[color:var(--recall-ink,#17332d)] top-[15px] w-[80px]" data-node-id="10:1654">
+        9:41
+      </p>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[4px] left-[298px] rounded-[1px] top-[25px] w-[3px]" data-node-id="10:1655" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[6px] left-[302px] rounded-[1px] top-[23px] w-[3px]" data-node-id="10:1656" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[8px] left-[306px] rounded-[1px] top-[21px] w-[3px]" data-node-id="10:1657" data-name="Signal" />
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[10px] left-[310px] rounded-[1px] top-[19px] w-[3px]" data-node-id="10:1658" data-name="Signal" />
+      <div className="absolute left-[320px] size-[15px] top-[16px]" data-node-id="10:1659" data-name="Icon / spark">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSpark} />
+      </div>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[10px] left-[344px] rounded-[3px] top-[21px] w-[22px]" data-node-id="10:1661" data-name="Batterie">
+        <div className="absolute bg-[var(--recall-surface,white)] h-[6px] left-[2px] rounded-[1px] top-[2px] w-[16px]" data-node-id="10:1662" data-name="Charge" />
+      </div>
+      <div className="absolute bg-[var(--recall-ink,#17332d)] h-[4px] left-[130px] rounded-[2px] top-[824px] w-[130px]" data-node-id="10:1663" data-name="Indicateur" />
+      <div className="absolute bg-[var(--recall-surface,white)] h-[28px] left-[97px] opacity-85 rounded-[var(--radius-999,999px)] top-[91px] w-[196px]" data-node-id="10:1712" data-name="TRỢ LÝ HỌC TẬP CÙNG AI">
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[14px] left-[98px] not-italic text-[10px] text-[color:var(--recall-action,#006b54)] text-center top-[5px] w-[180px]" data-node-id="10:1713">
+          TRỢ LÝ HỌC TẬP CÙNG AI
+        </p>
+      </div>
+      <div className="absolute left-[32px] size-[326px] top-[202px]" data-node-id="10:1714" data-name="Ellipse">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgEllipse} />
+      </div>
+      <div className="absolute left-[40px] size-[310px] top-[188px]" data-node-id="10:1715" data-name="RecallAI / Compagnon">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgRecallAiCompagnon} />
+      </div>
+      <div className="absolute flex h-[78.157px] items-center justify-center left-[271.86px] top-[220px] w-[68.914px]" data-node-id="10:1728">
+        <div className="flex-none rotate-12">
+          <div className="bg-[var(--recall-surface,white)] drop-shadow-[0px_8px_12px_rgba(36,95,76,0.07)] h-[68px] relative rounded-[var(--radius-16,16px)] w-[56px]" data-name="Floating flashcard">
+            <div className="absolute left-[16px] size-[24px] top-[20px]" data-node-id="10:1729" data-name="Icon / cards">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconCards} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute left-[47px] size-[24px] top-[276px]" data-node-id="10:1731" data-name="Icon / spark">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSpark1} />
+      </div>
+      <div className="absolute left-[302px] size-[16px] top-[443px]" data-node-id="10:1733" data-name="Icon / spark">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIconSpark2} />
+      </div>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Bold'] font-bold leading-[59px] left-[195px] not-italic text-[42px] text-[color:var(--recall-ink,#17332d)] text-center top-[509px] w-[342px]" data-node-id="10:1735">
+        RecallAI
+      </p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[27px] left-[195px] not-italic text-[19px] text-[color:var(--recall-ink,#17332d)] text-center top-[578px] w-[342px]" data-node-id="10:1736">
+        Học chủ động, nhớ lâu hơn
+      </p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Regular'] font-normal leading-[20px] left-[195px] not-italic text-[14px] text-[color:var(--recall-secondary-readable,#536e64)] text-center top-[614px] w-[326px]" data-node-id="10:1737">
+        Trợ lý học tập thông minh cùng AI
+      </p>
+      <a className="absolute bg-gradient-to-b content-stretch cursor-pointer drop-shadow-[0px_8px_12px_rgba(36,95,76,0.1)] flex from-[#00d6a0] h-[56px] items-center justify-center left-[24px] px-[24px] rounded-[var(--radius-999,999px)] to-[#81e8cd] top-[708px] w-[342px]" data-node-id="10:1738" data-name="CTA / Bắt đầu   →">
+        <p className="[word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[20px] not-italic relative shrink-0 text-[14px] text-[color:var(--recall-ink,#17332d)] text-center whitespace-pre" data-node-id="I10:1738;10:1588">{`Bắt đầu   →`}</p>
+      </a>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Inter:Medium'] font-medium leading-[14px] left-[195px] not-italic text-[10px] text-[color:var(--recall-secondary-readable,#536e64)] text-center top-[784px] w-[342px]" data-node-id="10:1740">
+        Active Recall • Spaced Repetition • AI
+      </p>
+    </div>
+  );
+}
