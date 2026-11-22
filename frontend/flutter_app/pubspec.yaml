@@ -38,6 +38,7 @@ dependencies:
   web: ^1.1.1
   desktop_drop: ^0.6.1
   file_selector: ^1.0.3
+
   flutter_svg: ^2.2.0
   cupertino_icons: ^1.0.8
 
@@ -100,4 +101,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+dependency_overrides:
+  desktop_drop:
+    path: packages/desktop_drop_stub
 

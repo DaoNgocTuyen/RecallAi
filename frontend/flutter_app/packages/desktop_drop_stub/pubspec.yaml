@@ -1,0 +1,11 @@
+name: desktop_drop
+version: 0.6.1
+description: Stub for desktop_drop — no native Android code, web-only.
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter

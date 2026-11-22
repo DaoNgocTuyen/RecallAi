@@ -43,3 +43,12 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Android Gradle build output
+android/build/
+
+# JVM heap dumps (generated on OOM during build)
+*.hprof
+
+# Local properties (machine-specific, never commit)
+android/local.properties
