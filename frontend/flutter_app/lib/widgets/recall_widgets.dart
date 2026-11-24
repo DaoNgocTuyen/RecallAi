@@ -117,6 +117,7 @@ class RecallCard extends StatelessWidget {
   final VoidCallback? onTap;
   @override
   Widget build(BuildContext context) => Container(
+    constraints: const BoxConstraints(minHeight: 0),
     decoration: BoxDecoration(
       color: color,
       border: Border.all(color: RecallColors.border),
@@ -135,7 +136,13 @@ class RecallCard extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(20),
-        child: Padding(padding: EdgeInsets.all(padding), child: child),
+        child: Padding(
+          padding: EdgeInsets.all(padding),
+          child: SizedBox(
+            width: double.infinity,
+            child: child,
+          ),
+        ),
       ),
     ),
   );
@@ -191,14 +198,16 @@ class AdaptiveColumns extends StatelessWidget {
   Widget build(BuildContext context) => LayoutBuilder(
     builder: (context, c) => c.maxWidth < breakpoint
         ? VStack(children, gap: 24)
-        : Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              for (var i = 0; i < children.length; i++) ...[
-                if (i > 0) const SizedBox(width: 24),
-                Expanded(flex: flex.isEmpty ? 1 : flex[i], child: children[i]),
+        : IntrinsicHeight(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                for (var i = 0; i < children.length; i++) ...[
+                  if (i > 0) const SizedBox(width: 24),
+                  Expanded(flex: flex.isEmpty ? 1 : flex[i], child: children[i]),
+                ],
               ],
-            ],
+            ),
           ),
   );
 }
