@@ -525,19 +525,17 @@ class _DropPanel extends StatelessWidget {
           ],
         ),
         clipBehavior: Clip.hardEdge,
-        child: IntrinsicWidth(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisSize: MainAxisSize.min,
-            children: items.map((item) {
-              final isSelected = item == selected;
-              return _DropItem(
-                label: item,
-                selected: isSelected,
-                onTap: () => onSelect(item),
-              );
-            }).toList(),
-          ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: items.map((item) {
+            final isSelected = item == selected;
+            return _DropItem(
+              label: item,
+              selected: isSelected,
+              onTap: () => onSelect(item),
+            );
+          }).toList(),
         ),
       ),
     );
