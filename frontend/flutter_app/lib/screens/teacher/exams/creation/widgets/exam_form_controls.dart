@@ -7,20 +7,12 @@ extension _ExamCreationExamFormControlsView on _ExamCreationScreenState {
     String value,
     List<String> options,
     ValueChanged<String> changed,
-  ) => VStack([
-    Text(label, style: const TextStyle(fontWeight: FontWeight.w600)),
-    DropdownButtonFormField<String>(
-      initialValue: value,
-      isExpanded: true,
-      items: [
-        for (final option in options)
-          DropdownMenuItem(value: option, child: Text(option)),
-      ],
-      onChanged: (value) {
-        if (value != null) _refresh(() => changed(value));
-      },
-    ),
-  ], gap: 8);
+  ) => RecallSelect(
+    label: label,
+    value: value,
+    items: options,
+    onChanged: (v) => _refresh(() => changed(v)),
+  );
 
   Widget _pricing(ExamDraft draft) => VStack([
     const SectionTitle('Cấu hình giá'),

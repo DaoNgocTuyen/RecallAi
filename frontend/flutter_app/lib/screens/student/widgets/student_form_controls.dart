@@ -13,29 +13,10 @@ extension _StudentStudentFormControlsView on _StudentScreenState {
     List<String> values,
     ValueChanged<String> onChanged, {
     required String label,
-  }) => Container(
-    padding: const EdgeInsets.symmetric(horizontal: 12),
-    decoration: BoxDecoration(
-      color: Colors.white,
-      borderRadius: BorderRadius.circular(12),
-      border: Border.all(color: RecallColors.border),
-    ),
-    child: DropdownButtonHideUnderline(
-      child: DropdownButton<String>(
-        value: value,
-        hint: Text(label),
-        onChanged: (v) {
-          if (v != null) onChanged(v);
-        },
-        items: values
-            .map(
-              (v) => DropdownMenuItem(
-                value: v,
-                child: Text(v == 'Tất cả' ? '$label · $v' : v),
-              ),
-            )
-            .toList(),
-      ),
-    ),
+  }) => RecallSelect(
+    value: value,
+    items: values,
+    onChanged: onChanged,
+    hint: label,
   );
 }
