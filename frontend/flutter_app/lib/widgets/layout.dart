@@ -42,7 +42,12 @@ class ActionGroup extends StatelessWidget {
 }
 
 /// Two-or-more columns that collapse to a single column below [breakpoint].
-/// On desktop each column stretches to equal height via [IntrinsicHeight].
+/// On desktop columns are laid out side-by-side in a [Row].
+///
+/// Note: [IntrinsicHeight] is intentionally NOT used here because it
+/// is incompatible with children containing [Stack] / [Positioned] widgets
+/// (they cannot compute an intrinsic height). Cards and other children
+/// control their own sizing.
 class AdaptiveColumns extends StatelessWidget {
   const AdaptiveColumns(
     this.children, {
@@ -56,19 +61,23 @@ class AdaptiveColumns extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => LayoutBuilder(
-    builder: (context, c) => c.maxWidth < breakpoint
-        ? VStack(children, gap: 24)
-        : IntrinsicHeight(
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                for (var i = 0; i < children.length; i++) ...[
-                  if (i > 0) const SizedBox(width: 24),
-                  Expanded(flex: flex.isEmpty ? 1 : flex[i], child: children[i]),
-                ],
-              ],
+    builder: (context, c) {
+      if (!c.maxWidth.isFinite || c.maxWidth < breakpoint) {
+        return VStack(children, gap: 24);
+      }
+      return Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          for (var i = 0; i < children.length; i++) ...[
+            if (i > 0) const SizedBox(width: 24),
+            Expanded(
+              flex: flex.isEmpty ? 1 : flex[i],
+              child: children[i],
             ),
-          ),
+          ],
+        ],
+      );
+    },
   );
 }
 

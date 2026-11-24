@@ -106,7 +106,10 @@ class _RecallSelectState extends State<RecallSelect>
 
   @override
   void dispose() {
-    _close(animate: false);
+    // Always remove overlay synchronously on dispose to prevent
+    // layout errors when the widget tree is torn down during tests.
+    _overlay?.remove();
+    _overlay = null;
     _ctrl.dispose();
     super.dispose();
   }
@@ -118,8 +121,10 @@ class _RecallSelectState extends State<RecallSelect>
     if (ctx == null) return;
     final box = ctx.findRenderObject() as RenderBox?;
     if (box == null || !box.hasSize) return;
-    final pos = box.localToGlobal(Offset.zero);
     final size = box.size;
+    // Skip if trigger hasn't been laid out yet (e.g. in test environments).
+    if (!size.isFinite || size.isEmpty) return;
+    final pos = box.localToGlobal(Offset.zero);
     final overlay = Overlay.of(context);
     _overlay = OverlayEntry(
       builder: (_) => Stack(

@@ -39,7 +39,7 @@ class RecallCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         child: Padding(
           padding: EdgeInsets.all(padding),
-          child: SizedBox(width: double.infinity, child: child),
+          child: child,
         ),
       ),
     ),

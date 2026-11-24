@@ -9,3 +9,4 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  cross_file: any
