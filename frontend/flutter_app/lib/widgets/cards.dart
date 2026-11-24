@@ -2,7 +2,14 @@ import 'package:flutter/material.dart';
 import '../design/recall_theme.dart';
 import 'layout.dart';
 
-/// Base card with rounded corners, border, and shadow.
+/// Base card with rounded corners, border, shadow, and full-height fill.
+///
+/// When placed inside [EqualHeightRow] (via [AdaptiveColumns] on desktop),
+/// the card automatically stretches to match the tallest sibling because
+/// [EqualHeightRow] gives every child a tight height constraint. The inner
+/// [Column] with [MainAxisSize.max] fills that height, pushing the content
+/// to the top and leaving whitespace at the bottom — giving the equal-height
+/// appearance.
 class RecallCard extends StatelessWidget {
   const RecallCard({
     super.key,
@@ -17,8 +24,7 @@ class RecallCard extends StatelessWidget {
   final VoidCallback? onTap;
 
   @override
-  Widget build(BuildContext context) => Container(
-    constraints: const BoxConstraints(minHeight: 0),
+  Widget build(BuildContext context) => DecoratedBox(
     decoration: BoxDecoration(
       color: color,
       border: Border.all(color: RecallColors.border),
@@ -39,7 +45,14 @@ class RecallCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         child: Padding(
           padding: EdgeInsets.all(padding),
-          child: child,
+          // Column with MainAxisSize.max: when EqualHeightRow gives a tight
+          // height, this column fills it. When unconstrained (mobile VStack),
+          // it shrink-wraps naturally.
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [child],
+          ),
         ),
       ),
     ),
