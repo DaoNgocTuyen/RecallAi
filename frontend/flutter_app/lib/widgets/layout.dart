@@ -216,7 +216,7 @@ class AdaptiveColumns extends StatelessWidget {
     this.children, {
     super.key,
     this.flex = const [],
-    this.breakpoint = 850,
+    this.breakpoint = 460,
   });
   final List<Widget> children;
   final List<int> flex;

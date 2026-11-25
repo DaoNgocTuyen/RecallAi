@@ -4,51 +4,11 @@ part of '../student_screen.dart';
 extension _StudentDashboardPageView on _StudentScreenState {
   Widget _dashboard(DemoStore s) => VStack([
     const Muted('Chào mừng trở lại! Hôm nay bạn muốn học gì?'),
-    AdaptiveColumns(
-      [
-        Container(
-          decoration: BoxDecoration(
-            gradient: const LinearGradient(
-              colors: [RecallColors.mint, RecallColors.cyan],
-            ),
-            borderRadius: BorderRadius.circular(20),
-            border: Border.all(color: RecallColors.border),
-          ),
-          padding: const EdgeInsets.all(24),
-          child: Row(
-            children: [
-              Expanded(
-                child: VStack([
-                  const SectionTitle('Học chủ động, nhớ lâu hơn', large: true),
-                  const Muted(
-                    'Tiếp tục hành trình học tập cùng trợ lý AI của bạn.',
-                  ),
-                  RecallButton(
-                    'Tạo bài học mới',
-                    onPressed: () => go(context, '/student/studio'),
-                  ),
-                ]),
-              ),
-              const SizedBox(width: 16),
-              const RecallRobot(size: 96),
-            ],
-          ),
-        ),
-        RecallCard(
-          child: VStack([
-            const FigmaImage('imgBiuTngClock', width: 28),
-            SectionTitle('${s.dueCount} thẻ cần ôn'),
-            const Muted('Một phiên ngắn giúp ghi nhớ bền vững.', small: true),
-            RecallButton(
-              'Ôn tập ngay',
-              secondary: true,
-              onPressed: () => go(context, '/student/review'),
-            ),
-          ]),
-        ),
-      ],
-      flex: const [49, 20],
-    ),
+
+    // ── Hero banner ───────────────────────────────────────────────────────
+    _heroBanner(),
+
+    // ── KPI metrics (2×2 on phone, 4×1 on wide) ──────────────────────────
     AdaptiveGrid(
       [
         Metric('${12 + (s.flashcards.isNotEmpty ? 1 : 0)}', 'Bộ flashcard'),
@@ -57,8 +17,10 @@ extension _StudentDashboardPageView on _StudentScreenState {
         const Metric('7 ngày', 'Học liên tiếp'),
       ],
       columns: 4,
-      minWidth: 180,
+      minWidth: 140,
     ),
+
+    // ── Quick actions ─────────────────────────────────────────────────────
     ActionGroup([
       RecallButton(
         'Tải tài liệu',
@@ -81,44 +43,78 @@ extension _StudentDashboardPageView on _StudentScreenState {
         onPressed: () => go(context, '/student/review'),
       ),
     ]),
+
+    // ── Row 1: Activity chart + Upcoming plan ─────────────────────────────
+    // breakpoint=700: chart needs enough horizontal space; stacks on phone
+    AdaptiveColumns(
+      [
+        const RecallCard(
+          child: VStack([
+            SectionTitle('Hoạt động học tập tuần này'),
+            BarChart(),
+            Muted('Phút học · Bộ dữ liệu mẫu 11/11/2026', small: true),
+          ]),
+        ),
+        RecallCard(
+          child: VStack([
+            const SectionTitle('Sắp tới trong kế hoạch'),
+            const _PlanItem(
+              icon: Icons.event_note_rounded,
+              label: '12/11 · Ôn SQL JOIN · 30 phút',
+            ),
+            _PlanItem(
+              icon: Icons.school_rounded,
+              label: '${dateLabel(s.examDate)} · Thi Cơ sở dữ liệu',
+            ),
+            RecallButton(
+              'Xem kế hoạch ôn thi',
+              secondary: true,
+              onPressed: () => go(context, '/student/planner'),
+            ),
+          ]),
+        ),
+      ],
+      flex: const [3, 2],
+      breakpoint: 700,
+    ),
+
+    // ── Row 2: Continue learning + Due review ─────────────────────────────
     AdaptiveColumns([
-      const RecallCard(
+      RecallCard(
         child: VStack([
-          SectionTitle('Hoạt động học tập tuần này'),
-          BarChart(),
-          Muted('Phút học · Bộ dữ liệu mẫu 11/11/2026', small: true),
+          const SectionTitle('Tiếp tục học'),
+          const Text('Cơ sở dữ liệu · Tiến độ 65%'),
+          const LinearProgressIndicator(
+            value: .65,
+            minHeight: 8,
+            borderRadius: BorderRadius.all(Radius.circular(8)),
+            backgroundColor: RecallColors.mint,
+            color: RecallColors.primaryDark,
+          ),
+          RecallButton(
+            'Tiếp tục luyện tập',
+            onPressed: () => go(context, '/student/generator'),
+          ),
         ]),
       ),
       RecallCard(
         child: VStack([
-          const SectionTitle('Sắp tới trong kế hoạch của bạn'),
-          const Text('12/11 · Ôn SQL JOIN · 30 phút'),
-          Text('${dateLabel(s.examDate)} · Thi Cơ sở dữ liệu'),
+          const FigmaImage('imgBiuTngClock', width: 28),
+          SectionTitle('${s.dueCount} thẻ cần ôn'),
+          const Muted(
+            'Một phiên ngắn giúp ghi nhớ bền vững.',
+            small: true,
+          ),
           RecallButton(
-            'Xem kế hoạch ôn thi',
+            'Ôn tập ngay',
             secondary: true,
-            onPressed: () => go(context, '/student/planner'),
+            onPressed: () => go(context, '/student/review'),
           ),
         ]),
       ),
     ]),
-    RecallCard(
-      child: VStack([
-        const SectionTitle('Tiếp tục học'),
-        const Text('Cơ sở dữ liệu · Tiến độ 65%'),
-        const LinearProgressIndicator(
-          value: .65,
-          minHeight: 8,
-          borderRadius: BorderRadius.all(Radius.circular(8)),
-          backgroundColor: RecallColors.mint,
-          color: RecallColors.primaryDark,
-        ),
-        RecallButton(
-          'Tiếp tục luyện tập',
-          onPressed: () => go(context, '/student/generator'),
-        ),
-      ]),
-    ),
+
+    // ── Row 3: Exam card + AI suggestion ──────────────────────────────────
     AdaptiveColumns([
       RecallCard(
         child: VStack([
@@ -146,4 +142,55 @@ extension _StudentDashboardPageView on _StudentScreenState {
       ),
     ]),
   ], gap: 24);
+
+  Widget _heroBanner() => Container(
+    decoration: BoxDecoration(
+      gradient: const LinearGradient(
+        colors: [RecallColors.mint, RecallColors.cyan],
+      ),
+      borderRadius: BorderRadius.circular(20),
+      border: Border.all(color: RecallColors.border),
+    ),
+    padding: const EdgeInsets.all(24),
+    child: Row(
+      children: [
+        Expanded(
+          child: VStack([
+            const SectionTitle('Học chủ động, nhớ lâu hơn', large: true),
+            const Muted(
+              'Tiếp tục hành trình học tập cùng trợ lý AI của bạn.',
+            ),
+            RecallButton(
+              'Tạo bài học mới',
+              onPressed: () => go(context, '/student/studio'),
+            ),
+          ]),
+        ),
+        const SizedBox(width: 16),
+        const RecallRobot(size: 96),
+      ],
+    ),
+  );
+}
+
+// Small plan item with leading icon
+class _PlanItem extends StatelessWidget {
+  const _PlanItem({required this.icon, required this.label});
+  final IconData icon;
+  final String label;
+
+  @override
+  Widget build(BuildContext context) => Row(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      Padding(
+        padding: const EdgeInsets.only(top: 2),
+        child: Icon(icon, size: 15, color: RecallColors.muted),
+      ),
+      const SizedBox(width: 8),
+      Expanded(
+        child: Text(label, style: const TextStyle(fontSize: 13)),
+      ),
+    ],
+  );
 }

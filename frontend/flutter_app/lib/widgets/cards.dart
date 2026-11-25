@@ -4,54 +4,61 @@ import 'layout.dart';
 
 /// Base card with rounded corners, border, shadow, and full-height fill.
 ///
-/// When placed inside [EqualHeightRow] (via [AdaptiveColumns] on desktop),
-/// the card automatically stretches to match the tallest sibling because
-/// [EqualHeightRow] gives every child a tight height constraint. The inner
-/// [Column] with [MainAxisSize.max] fills that height, pushing the content
-/// to the top and leaving whitespace at the bottom — giving the equal-height
-/// appearance.
+/// • [minHeight] (default 160) ensures cards are never awkwardly short when
+///   content is sparse.
+/// • When placed inside [EqualHeightRow] (via [AdaptiveColumns]), the card
+///   automatically stretches to match the tallest sibling because
+///   [EqualHeightRow] gives every child a tight height constraint — the inner
+///   [Column] with [MainAxisSize.max] fills that height, pushing content to
+///   the top and leaving whitespace at the bottom.
 class RecallCard extends StatelessWidget {
   const RecallCard({
     super.key,
     required this.child,
     this.color = Colors.white,
     this.padding = 24,
+    this.minHeight = 160,
     this.onTap,
   });
   final Widget child;
   final Color color;
   final double padding;
+
+  /// Minimum card height in logical pixels. Set to 0 to allow any height.
+  final double minHeight;
   final VoidCallback? onTap;
 
   @override
-  Widget build(BuildContext context) => DecoratedBox(
-    decoration: BoxDecoration(
-      color: color,
-      border: Border.all(color: RecallColors.border),
-      borderRadius: BorderRadius.circular(20),
-      boxShadow: const [
-        BoxShadow(
-          color: Color(0x0F0D4033),
-          offset: Offset(0, 4),
-          blurRadius: 16,
-        ),
-      ],
-    ),
-    child: Material(
-      color: Colors.transparent,
-      borderRadius: BorderRadius.circular(20),
-      child: InkWell(
-        onTap: onTap,
+  Widget build(BuildContext context) => ConstrainedBox(
+    constraints: BoxConstraints(minHeight: minHeight),
+    child: DecoratedBox(
+      decoration: BoxDecoration(
+        color: color,
+        border: Border.all(color: RecallColors.border),
         borderRadius: BorderRadius.circular(20),
-        child: Padding(
-          padding: EdgeInsets.all(padding),
-          // Column with MainAxisSize.max: when EqualHeightRow gives a tight
-          // height, this column fills it. When unconstrained (mobile VStack),
-          // it shrink-wraps naturally.
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [child],
+        boxShadow: const [
+          BoxShadow(
+            color: Color(0x0F0D4033),
+            offset: Offset(0, 4),
+            blurRadius: 16,
+          ),
+        ],
+      ),
+      child: Material(
+        color: Colors.transparent,
+        borderRadius: BorderRadius.circular(20),
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(20),
+          child: Padding(
+            padding: EdgeInsets.all(padding),
+            // MainAxisSize.max: fills tight height from EqualHeightRow.
+            // When unconstrained (single-column layout), shrink-wraps naturally.
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [child],
+            ),
           ),
         ),
       ),
@@ -67,6 +74,7 @@ class Metric extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => RecallCard(
+    minHeight: 110,
     child: VStack([
       Text(
         value,
